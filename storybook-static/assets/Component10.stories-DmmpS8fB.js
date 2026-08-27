@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{d as t}from"./iframe-DgxPaWgT.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({testId:e})=>(0,r.jsx)(`div`,{className:`component10-root`,"data-testid":e,children:`Component10 Content`}),i.__docgenInfo={description:``,methods:[],displayName:`Component10`,props:{testId:{required:!1,tsType:{name:`string`},description:`Figma Node ID: 43:526`}}}})))()}var o,s,c;function l(){return(l=e((()=>{a(),o={title:`Figma Components/Component10`,component:i,parameters:{layout:`centered`,docs:{description:{component:"Auto-generated component from Figma layer `Component 10`."}}},tags:[`autodocs`]},s={args:{testId:`Component10-default`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    testId: 'Component10-default'
+  }
+}`,...s.parameters?.docs?.source}}},c=[`Default`]})))()}l();export{s as Default,c as __namedExportsOrder,o as default};

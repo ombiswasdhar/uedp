@@ -1,0 +1,97 @@
+.dropdown-menu-root {
+  position: relative;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Trigger Button - Frame 1 */
+.dropdown-trigger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 238px;
+  height: 44px;
+  padding: 12px 21px 12px 12px;
+  gap: 11px;
+  border-radius: 22px;
+  background-color: rgba(243, 243, 245, 1);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 2.9px rgba(0, 0, 0, 0.41);
+  transition: all 0.3s ease-out;
+}
+
+.dropdown-trigger:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-trigger-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(10, 10, 10, 1);
+}
+
+.dropdown-chevron {
+  flex-shrink: 0;
+}
+
+/* Dropdown List - Group 1 (Opened state) */
+.dropdown-list {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 238px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 0;
+  z-index: 10;
+}
+
+/* Dropdown Item - Default State */
+.dropdown-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 39px;
+  padding: 12px 21px 12px 12px;
+  cursor: pointer;
+  background-color: rgba(243, 243, 245, 1);
+  transition: background-color 0.2s ease;
+}
+
+/* Optional: add border radius to top/bottom items if the list should look rounded */
+.dropdown-item:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.dropdown-item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.dropdown-item.hovered {
+  /* Exact color extracted from Variant8 (r:0.9568, g:0.247, b:0.3686) */
+  background-color: rgba(244, 63, 94, 1);
+}
+
+.dropdown-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(24, 24, 27, 1);
+}
+
+.dropdown-item.hovered .dropdown-item-text {
+  color: rgba(255, 255, 255, 1); /* White for contrast against the red */
+}
+
+/* Chevron icon color change on hover */
+.dropdown-item.hovered .dropdown-item-icon path {
+  stroke: rgba(255, 255, 255, 1);
+}

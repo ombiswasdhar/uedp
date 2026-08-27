@@ -1,0 +1,16 @@
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MEASUREMENT_ID');
+  
+  // Track storybook route changes
+  window.addEventListener('hashchange', () => {
+    gtag('event', 'page_view', { page_path: location.hash });
+  });
+  window.addEventListener('popstate', () => {
+    gtag('event', 'page_view', { page_path: location.hash });
+  });
+</script>

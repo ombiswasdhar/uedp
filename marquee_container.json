@@ -1,0 +1,532 @@
+{
+  "id": "60:829",
+  "name": "Text container",
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "boundVariables": {
+    "fills": [
+      {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:1:65"
+      }
+    ]
+  },
+  "children": [
+    {
+      "id": "60:830",
+      "name": "Text 4",
+      "type": "TEXT",
+      "scrollBehavior": "SCROLLS",
+      "componentPropertyReferences": {
+        "characters": "Marquee text#1933:12"
+      },
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7:5"
+          }
+        ]
+      },
+      "blendMode": "PASS_THROUGH",
+      "opacity": 0,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7:5"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "absoluteBoundingBox": {
+        "x": -6171.5,
+        "y": 151,
+        "width": 5189,
+        "height": 78
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "KONKAN GHATS ✕  BOMBAY DREAMS ✕  LADAKH NIGHTS ✕  JAIPUR SKIES ✕  VAGATOR SURF ✕  SOURCED FROM NATURE ✕  BUILT FOR THE FUTURE ✕  SOLID HARDWOOD ✕",
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "lineTypes": [
+        "NONE"
+      ],
+      "lineIndentations": [
+        0
+      ],
+      "style": {
+        "fontFamily": "Century Gothic",
+        "fontPostScriptName": "CenturyGothic-Bold",
+        "fontStyle": "Bold",
+        "fontWeight": 700,
+        "textCase": "UPPER",
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 64,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 78.46875,
+        "lineHeightPercent": 100,
+        "lineHeightUnit": "INTRINSIC_%"
+      },
+      "layoutVersion": 3,
+      "effects": [],
+      "interactions": [],
+      "complexStrokeProperties": {
+        "strokeType": "BASIC"
+      }
+    },
+    {
+      "id": "60:831",
+      "name": "Text 5",
+      "type": "TEXT",
+      "scrollBehavior": "SCROLLS",
+      "componentPropertyReferences": {
+        "characters": "Marquee text#1933:12"
+      },
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7:5"
+          }
+        ]
+      },
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7:5"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "absoluteBoundingBox": {
+        "x": -934.5,
+        "y": 147,
+        "width": 4422,
+        "height": 82
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "KONKAN GHATS ✕  BOMBAY DREAMS ✕  LADAKH NIGHTS ✕  JAIPUR SKIES ✕  VAGATOR SURF ✕  SOURCED FROM NATURE ✕  BUILT FOR THE FUTURE ✕  SOLID HARDWOOD ✕",
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "lineTypes": [
+        "NONE"
+      ],
+      "lineIndentations": [
+        0
+      ],
+      "style": {
+        "fontFamily": "Rajdhani",
+        "fontPostScriptName": "Rajdhani-Bold",
+        "fontStyle": "Bold",
+        "fontWeight": 700,
+        "textCase": "UPPER",
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 64,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 81.66400146484375,
+        "lineHeightPercent": 100,
+        "lineHeightUnit": "INTRINSIC_%"
+      },
+      "layoutVersion": 5,
+      "effects": [],
+      "interactions": [],
+      "complexStrokeProperties": {
+        "strokeType": "BASIC"
+      }
+    },
+    {
+      "id": "60:832",
+      "name": "Text 1",
+      "type": "TEXT",
+      "scrollBehavior": "SCROLLS",
+      "componentPropertyReferences": {
+        "characters": "Marquee text#1933:12"
+      },
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7:5"
+          }
+        ]
+      },
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7:5"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "absoluteBoundingBox": {
+        "x": 3535.5,
+        "y": 147,
+        "width": 4422,
+        "height": 82
+      },
+      "absoluteRenderBounds": {
+        "x": 5407,
+        "y": 162.71200561523438,
+        "width": 679,
+        "height": 49.15199279785156
+      },
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "KONKAN GHATS ✕  BOMBAY DREAMS ✕  LADAKH NIGHTS ✕  JAIPUR SKIES ✕  VAGATOR SURF ✕  SOURCED FROM NATURE ✕  BUILT FOR THE FUTURE ✕  SOLID HARDWOOD ✕",
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "lineTypes": [
+        "NONE"
+      ],
+      "lineIndentations": [
+        0
+      ],
+      "style": {
+        "fontFamily": "Rajdhani",
+        "fontPostScriptName": "Rajdhani-Bold",
+        "fontStyle": "Bold",
+        "fontWeight": 700,
+        "textCase": "UPPER",
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 64,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 81.66400146484375,
+        "lineHeightPercent": 100,
+        "lineHeightUnit": "INTRINSIC_%"
+      },
+      "layoutVersion": 5,
+      "effects": [],
+      "interactions": [],
+      "complexStrokeProperties": {
+        "strokeType": "BASIC"
+      }
+    },
+    {
+      "id": "60:833",
+      "name": "Text 2",
+      "type": "TEXT",
+      "scrollBehavior": "SCROLLS",
+      "componentPropertyReferences": {
+        "characters": "Marquee text#1933:12"
+      },
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7:5"
+          }
+        ]
+      },
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7:5"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "absoluteBoundingBox": {
+        "x": 8005.5,
+        "y": 147,
+        "width": 4422,
+        "height": 82
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "KONKAN GHATS ✕  BOMBAY DREAMS ✕  LADAKH NIGHTS ✕  JAIPUR SKIES ✕  VAGATOR SURF ✕  SOURCED FROM NATURE ✕  BUILT FOR THE FUTURE ✕  SOLID HARDWOOD ✕",
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "lineTypes": [
+        "NONE"
+      ],
+      "lineIndentations": [
+        0
+      ],
+      "style": {
+        "fontFamily": "Rajdhani",
+        "fontPostScriptName": "Rajdhani-Bold",
+        "fontStyle": "Bold",
+        "fontWeight": 700,
+        "textCase": "UPPER",
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 64,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 81.66400146484375,
+        "lineHeightPercent": 100,
+        "lineHeightUnit": "INTRINSIC_%"
+      },
+      "layoutVersion": 5,
+      "effects": [],
+      "interactions": [],
+      "complexStrokeProperties": {
+        "strokeType": "BASIC"
+      }
+    },
+    {
+      "id": "60:834",
+      "name": "Text 3",
+      "type": "TEXT",
+      "scrollBehavior": "SCROLLS",
+      "componentPropertyReferences": {
+        "characters": "Marquee text#1933:12"
+      },
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7:5"
+          }
+        ]
+      },
+      "blendMode": "PASS_THROUGH",
+      "opacity": 0,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7:5"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "absoluteBoundingBox": {
+        "x": 12475.5,
+        "y": 151,
+        "width": 5189,
+        "height": 78
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "characters": "KONKAN GHATS ✕  BOMBAY DREAMS ✕  LADAKH NIGHTS ✕  JAIPUR SKIES ✕  VAGATOR SURF ✕  SOURCED FROM NATURE ✕  BUILT FOR THE FUTURE ✕  SOLID HARDWOOD ✕",
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "lineTypes": [
+        "NONE"
+      ],
+      "lineIndentations": [
+        0
+      ],
+      "style": {
+        "fontFamily": "Century Gothic",
+        "fontPostScriptName": "CenturyGothic-Bold",
+        "fontStyle": "Bold",
+        "fontWeight": 700,
+        "textCase": "UPPER",
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 64,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 78.46875,
+        "lineHeightPercent": 100,
+        "lineHeightUnit": "INTRINSIC_%"
+      },
+      "layoutVersion": 3,
+      "effects": [],
+      "interactions": [],
+      "complexStrokeProperties": {
+        "strokeType": "BASIC"
+      }
+    }
+  ],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": false,
+  "background": [
+    {
+      "blendMode": "NORMAL",
+      "type": "SOLID",
+      "color": {
+        "r": 0.9372549057006836,
+        "g": 0.2666666805744171,
+        "b": 0.2666666805744171,
+        "a": 1
+      },
+      "boundVariables": {
+        "color": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1:65"
+        }
+      }
+    }
+  ],
+  "fills": [
+    {
+      "blendMode": "NORMAL",
+      "type": "SOLID",
+      "color": {
+        "r": 0.9372549057006836,
+        "g": 0.2666666805744171,
+        "b": 0.2666666805744171,
+        "a": 1
+      },
+      "boundVariables": {
+        "color": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1:65"
+        }
+      }
+    }
+  ],
+  "strokes": [
+    {
+      "blendMode": "NORMAL",
+      "type": "SOLID",
+      "color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      }
+    }
+  ],
+  "strokeWeight": 6,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0.9372549057006836,
+    "g": 0.2666666805744171,
+    "b": 0.2666666805744171,
+    "a": 1
+  },
+  "layoutMode": "HORIZONTAL",
+  "counterAxisAlignItems": "MAX",
+  "paddingTop": 48,
+  "paddingBottom": 48,
+  "itemSpacing": 48,
+  "layoutWrap": "NO_WRAP",
+  "absoluteBoundingBox": {
+    "x": -6171.5,
+    "y": 99,
+    "width": 23836,
+    "height": 178
+  },
+  "absoluteRenderBounds": {
+    "x": 5407,
+    "y": 99,
+    "width": 679,
+    "height": 178
+  },
+  "constraints": {
+    "vertical": "TOP",
+    "horizontal": "LEFT"
+  },
+  "layoutAlign": "INHERIT",
+  "layoutGrow": 0,
+  "layoutSizingHorizontal": "HUG",
+  "layoutSizingVertical": "HUG",
+  "effects": [],
+  "interactions": [],
+  "complexStrokeProperties": {
+    "strokeType": "BASIC"
+  }
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+.marquee-root {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgba(239, 68, 68, 1);
+  border: 6px solid rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  padding: 48px 0;
+  width: 100%;
+  height: 178px;
+}
+
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.direction-yes {
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.direction-no {
+  animation: marquee-scroll-reverse 25s linear infinite;
+}
+
+.marquee-text {
+  display: inline-block;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 81.6px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  padding-right: 48px; /* Gap between repeats */
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,1 @@
+console.log("To deploy to vercel, push to github and connect the repository, or use vercel CLI (vercel --prod)");

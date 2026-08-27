@@ -1,0 +1,128 @@
+[
+  {
+    "id": "70:815",
+    "name": "Frame 5479",
+    "type": "COMPONENT",
+    "fills": []
+  },
+  {
+    "id": "68:252",
+    "name": "Frame 5477",
+    "type": "COMPONENT",
+    "fills": []
+  },
+  {
+    "id": "66:1528",
+    "name": "Container",
+    "type": "COMPONENT",
+    "fills": []
+  },
+  {
+    "id": "47:382",
+    "name": "ReviewCard",
+    "type": "COMPONENT",
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "66:1618",
+    "name": "ReviewCard",
+    "type": "COMPONENT",
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "66:1619",
+    "name": "ReviewCard",
+    "type": "COMPONENT",
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "66:1673",
+    "name": "ReviewCard",
+    "type": "COMPONENT",
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "66:1674",
+    "name": "ReviewCard",
+    "type": "COMPONENT",
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "17:1960",
+    "name": "Nav",
+    "type": "COMPONENT_SET",
+    "fills": []
+  },
+  {
+    "id": "17:1961",
+    "name": "Property 1=Default",
+    "type": "COMPONENT",
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ]
+  }
+]

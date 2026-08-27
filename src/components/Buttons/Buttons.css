@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+
+.buttons-root {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 12px 24px;
+  gap: 8px;
+  border-radius: 25px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20.4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.buttons-root:disabled, .buttons-root.force-disabled {
+  cursor: not-allowed;
+}
+
+/* ============================== */
+/* FILL VARIANT                   */
+/* ============================== */
+.variant-fill {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  border-color: transparent;
+}
+
+.variant-fill:hover, .variant-fill.force-hover {
+  background-color: rgba(0, 0, 0, 1); /* From Figma: hover is black */
+}
+
+.variant-fill:active, .variant-fill.force-active {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.variant-fill:focus, .variant-fill.force-focus {
+  border-color: rgba(183, 199, 255, 1); /* 0.716, 0.78, 1 */
+  outline: none;
+}
+
+.variant-fill:disabled, .variant-fill.force-disabled {
+  background-color: rgba(221, 225, 234, 1);
+  color: rgba(24, 24, 27, 1);
+  border-color: transparent;
+}
+
+
+/* ============================== */
+/* OUTLINE VARIANT                */
+/* ============================== */
+.variant-outline {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(24, 24, 27, 1);
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.variant-outline:hover, .variant-outline.force-hover {
+  background-color: rgba(239, 243, 255, 1); /* 0.9375, 0.953, 1 */
+  color: rgba(24, 24, 27, 1);
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.variant-outline:active, .variant-outline.force-active {
+  background-color: rgba(254, 202, 202, 1); /* 0.996, 0.792, 0.792 */
+  color: rgba(24, 24, 27, 1);
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.variant-outline:focus, .variant-outline.force-focus {
+  background-color: rgba(239, 68, 68, 1); /* 0.937, 0.266, 0.266 */
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(0, 0, 0, 1);
+  outline: none;
+}
+
+.variant-outline:disabled, .variant-outline.force-disabled {
+  background-color: rgba(231, 236, 242, 1);
+  color: rgba(24, 24, 27, 1);
+  border-color: rgba(167, 169, 177, 1);
+}
+
+
+/* ============================== */
+/* GHOST VARIANT                  */
+/* ============================== */
+.variant-ghost {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(24, 24, 27, 1);
+  border-color: rgba(226, 231, 255, 1); /* 0.887, 0.906, 1 */
+}
+
+.variant-ghost:hover, .variant-ghost.force-hover {
+  background-color: rgba(243, 246, 251, 1); /* 0.9529, 0.9647, 0.9843 */
+  border-color: transparent;
+}
+
+.variant-ghost:active, .variant-ghost.force-active {
+  background-color: rgba(232, 235, 246, 1); /* 0.909, 0.921, 0.964 */
+  border-color: transparent;
+}
+
+.variant-ghost:focus, .variant-ghost.force-focus {
+  background-color: rgba(231, 236, 241, 1); /* 0.905, 0.925, 0.945 */
+  border-color: rgba(204, 208, 217, 1); /* 0.8, 0.815, 0.85 */
+  outline: none;
+}
+
+.variant-ghost:disabled, .variant-ghost.force-disabled {
+  background-color: rgba(231, 236, 242, 1); /* 0.905, 0.925, 0.949 */
+  color: rgba(24, 24, 27, 1);
+  border-color: transparent;
+}

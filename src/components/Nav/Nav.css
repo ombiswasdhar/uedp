@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap');
+
+.nav-root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 1);
+  /* The logo was x:24, container was right-aligned with 21px margin in 1920px width */
+  padding: 0 21px 0 24px;
+  box-sizing: border-box;
+}
+
+.nav-logo {
+  width: 173.25px;
+  height: 47.71px;
+  background-color: rgba(0, 0, 0, 0.05); /* Placeholder styling */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.nav-logo-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 46px; /* itemSpacing: 46 from Figma */
+}
+
+.nav-search-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: rgba(0, 0, 0, 1);
+  transition: color 0.2s;
+}
+
+.nav-search-btn.active, .nav-search-btn:hover {
+  color: rgba(255, 81, 89, 1); /* Active search turns red */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding: 0 16px; /* Approx padding to get 62px width for "Shop" */
+  background-color: transparent;
+  border: none;
+  border-radius: 6px; /* cornerRadius: 6 */
+  cursor: pointer;
+  
+  /* Text Styles - Inactive (Vehicles, Taxis, About) */
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 10.21px; /* Exact size from Figma */
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 1.84px; 
+  transition: all 0.2s ease;
+}
+
+.nav-link.active {
+  background-color: rgba(255, 81, 89, 1); /* r:1, g:0.317, b:0.35 */
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700; /* Bold */
+  letter-spacing: 2.25px; /* slightly wider in active state */
+}
+
+.nav-link:hover:not(.active) {
+  background-color: rgba(0, 0, 0, 0.05); /* Slight hover effect */
+}
