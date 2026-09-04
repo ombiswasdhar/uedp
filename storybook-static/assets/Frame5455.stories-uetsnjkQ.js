@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{d as t}from"./iframe-o63uXMUk.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({testId:e})=>(0,r.jsx)(`div`,{className:`frame5455-root`,"data-testid":e,children:`Frame5455 Content`}),i.__docgenInfo={description:``,methods:[],displayName:`Frame5455`,props:{testId:{required:!1,tsType:{name:`string`},description:`Figma Node ID: 43:338`}}}})))()}var o,s,c;function l(){return(l=e((()=>{a(),o={title:`Figma Components/Frame5455`,component:i,parameters:{layout:`centered`,docs:{description:{component:"Auto-generated component from Figma layer `Frame 5455`."}}},tags:[`autodocs`]},s={args:{testId:`Frame5455-default`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    testId: 'Frame5455-default'
+  }
+}`,...s.parameters?.docs?.source}}},c=[`Default`]})))()}l();export{s as Default,c as __namedExportsOrder,o as default};

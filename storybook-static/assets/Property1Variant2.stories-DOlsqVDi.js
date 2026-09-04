@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{d as t}from"./iframe-o63uXMUk.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({testId:e})=>(0,r.jsx)(`div`,{className:`property1variant2-root`,"data-testid":e,children:`Property1Variant2 Content`}),i.__docgenInfo={description:``,methods:[],displayName:`Property1Variant2`,props:{testId:{required:!1,tsType:{name:`string`},description:`Figma Node ID: 39:355`}}}})))()}var o,s,c;function l(){return(l=e((()=>{a(),o={title:`Figma Components/Property1Variant2`,component:i,parameters:{layout:`centered`,docs:{description:{component:"Auto-generated component from Figma layer `Property 1=Variant2`."}}},tags:[`autodocs`]},s={args:{testId:`Property1Variant2-default`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    testId: 'Property1Variant2-default'
+  }
+}`,...s.parameters?.docs?.source}}},c=[`Default`]})))()}l();export{s as Default,c as __namedExportsOrder,o as default};

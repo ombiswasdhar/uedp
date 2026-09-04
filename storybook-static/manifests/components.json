@@ -300,6 +300,89 @@
       ],
       "import": "import { Container } from \"design-system-storybook\";"
     },
+    "figma-components-customer-reviews-section": {
+      "id": "figma-components-customer-reviews-section",
+      "name": "CustomerReviews",
+      "path": "./src/components/CustomerReviews/CustomerReviews.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "CustomerReviews",
+        "definedInFile": "C:\\Users\\hp\\.gemini\\antigravity-ide\\scratch\\design-system-storybook\\src\\components\\CustomerReviews\\CustomerReviews.tsx",
+        "actualName": "CustomerReviews",
+        "exportName": "CustomerReviews",
+        "props": {
+          "testId": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": "Figma Node ID: 24:126",
+            "defaultValue": {
+              "value": "'customer-reviews-24-126'",
+              "computed": false
+            }
+          },
+          "overallRating": {
+            "required": false,
+            "tsType": {
+              "name": "number"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "4.7",
+              "computed": false
+            }
+          },
+          "totalReviews": {
+            "required": false,
+            "tsType": {
+              "name": "number"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "128",
+              "computed": false
+            }
+          },
+          "onWriteReview": {
+            "required": false,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "className": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "''",
+              "computed": false
+            }
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "figma-components-customer-reviews-section--default",
+          "name": "Default",
+          "snippet": "const Default = () => <CustomerReviews overallRating={4.7} totalReviews={128} />;"
+        }
+      ],
+      "import": "import { CustomerReviews } from \"design-system-storybook\";"
+    },
     "figma-components-dropdown-menu": {
       "id": "figma-components-dropdown-menu",
       "name": "DropdownMenu",
@@ -1813,8 +1896,8 @@
       ],
       "import": "import { RelatedProduct } from \"design-system-storybook\";"
     },
-    "figma-components-reviewcard": {
-      "id": "figma-components-reviewcard",
+    "figma-components-review-card": {
+      "id": "figma-components-review-card",
       "name": "ReviewCard",
       "path": "./src/components/ReviewCard/ReviewCard.stories.tsx",
       "jsDocTags": {},
@@ -1831,15 +1914,95 @@
             "tsType": {
               "name": "string"
             },
-            "description": "Figma Node ID: 47:382"
+            "description": "Figma Node ID: 24:189 / 47:382",
+            "defaultValue": {
+              "value": "'review-card'",
+              "computed": false
+            }
+          },
+          "author": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "date": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "rating": {
+            "required": false,
+            "tsType": {
+              "name": "number"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "5",
+              "computed": false
+            }
+          },
+          "reviewText": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "photoUrl": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "avatarColor": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "'#FFB900'",
+              "computed": false
+            }
+          },
+          "className": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "''",
+              "computed": false
+            }
           }
         }
       },
       "stories": [
         {
-          "id": "figma-components-reviewcard--default",
-          "name": "Default",
-          "snippet": "const Default = () => <ReviewCard testId=\"ReviewCard-default\" />;"
+          "id": "figma-components-review-card--with-photo",
+          "name": "With Photo",
+          "snippet": "const WithPhoto = () => <ReviewCard\r\n    author=\"Michael T.\"\r\n    date=\"April 8, 2026\"\r\n    rating={5}\r\n    reviewText=\"My 3-year-old absolutely loves this toy car! The colors are vibrant, and it's the perfect size for little hands. The quality is outstanding—it's survived countless crashes and is still in perfect condition. Highly recommend!\"\r\n    photoUrl={photo1} />;"
+        },
+        {
+          "id": "figma-components-review-card--text-only",
+          "name": "Text Only",
+          "snippet": "const TextOnly = () => <ReviewCard\r\n    author=\"Jessica L.\"\r\n    date=\"April 5, 2026\"\r\n    rating={4}\r\n    reviewText=\"Really nice toy car with smooth wheels that roll easily. My daughter enjoys playing with it every day. The only minor issue is that the paint chipped slightly after a few weeks, but overall a solid purchase.\" />;"
+        },
+        {
+          "id": "figma-components-review-card--sustainable-toy-review",
+          "name": "Sustainable Toy Review",
+          "snippet": "const SustainableToyReview = () => <ReviewCard\r\n    author=\"David K.\"\r\n    date=\"April 1, 2026\"\r\n    rating={5}\r\n    reviewText=\"Bought this for my nephew's birthday and it was a hit! The quality is excellent and it feels very sturdy. Love that it's made from sustainable materials too.\"\r\n    photoUrl={photo2} />;"
+        },
+        {
+          "id": "figma-components-review-card--toddler-review",
+          "name": "Toddler Review",
+          "snippet": "const ToddlerReview = () => <ReviewCard\r\n    author=\"Emily R.\"\r\n    date=\"March 28, 2026\"\r\n    rating={5}\r\n    reviewText=\"Perfect for toddlers! The size is just right, not too big or small. The wheels move smoothly and it's easy to clean. My twins play with it together and it's holding up great.\"\r\n    photoUrl={photo3} />;"
         }
       ],
       "import": "import { ReviewCard } from \"design-system-storybook\";"
@@ -3568,6 +3731,6 @@
   },
   "meta": {
     "docgen": "react-docgen",
-    "durationMs": 1345
+    "durationMs": 1394
   }
 }

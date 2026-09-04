@@ -89,3 +89,6 @@ export * from './components/Property1Variant10/Property1Variant10';
 export * from './components/Property1Variant12/Property1Variant12';
 export * from './components/Property1Variant11/Property1Variant11';
 export * from './components/Property1Frame18/Property1Frame18';
+export * from './components/ProductDetails/ProductDetails';
+export * from './components/ReviewCard/ReviewCard';
+export * from './components/CustomerReviews/CustomerReviews';
