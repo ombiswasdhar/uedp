@@ -1,5 +1,0 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{d as t}from"./iframe-rTMCNpcK.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({testId:e})=>(0,r.jsx)(`div`,{className:`statefocustypefill-root`,"data-testid":e,children:`StateFocusTypeFill Content`}),i.__docgenInfo={description:``,methods:[],displayName:`StateFocusTypeFill`,props:{testId:{required:!1,tsType:{name:`string`},description:`Figma Node ID: 51:589`}}}})))()}var o,s,c;function l(){return(l=e((()=>{a(),o={title:`Figma Components/StateFocusTypeFill`,component:i,parameters:{layout:`centered`,docs:{description:{component:"Auto-generated component from Figma layer `State=Focus, Type=Fill`."}}},tags:[`autodocs`]},s={args:{testId:`StateFocusTypeFill-default`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    testId: 'StateFocusTypeFill-default'
-  }
-}`,...s.parameters?.docs?.source}}},c=[`Default`]})))()}l();export{s as Default,c as __namedExportsOrder,o as default};

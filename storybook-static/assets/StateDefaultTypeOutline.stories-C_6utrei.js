@@ -1,5 +1,0 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{d as t}from"./iframe-rTMCNpcK.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({testId:e})=>(0,r.jsx)(`div`,{className:`statedefaulttypeoutline-root`,"data-testid":e,children:`StateDefaultTypeOutline Content`}),i.__docgenInfo={description:``,methods:[],displayName:`StateDefaultTypeOutline`,props:{testId:{required:!1,tsType:{name:`string`},description:`Figma Node ID: 51:621`}}}})))()}var o,s,c;function l(){return(l=e((()=>{a(),o={title:`Figma Components/StateDefaultTypeOutline`,component:i,parameters:{layout:`centered`,docs:{description:{component:"Auto-generated component from Figma layer `State=Default, Type=Outline`."}}},tags:[`autodocs`]},s={args:{testId:`StateDefaultTypeOutline-default`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    testId: 'StateDefaultTypeOutline-default'
-  }
-}`,...s.parameters?.docs?.source}}},c=[`Default`]})))()}l();export{s as Default,c as __namedExportsOrder,o as default};

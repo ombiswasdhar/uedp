@@ -809,6 +809,216 @@
       ],
       "import": "import { Frame5479 } from \"design-system-storybook\";"
     },
+    "figma-components-hovering-tv": {
+      "id": "figma-components-hovering-tv",
+      "name": "HoveringTV",
+      "path": "./src/components/HoveringTV/HoveringTV.stories.tsx",
+      "jsDocTags": {},
+      "description": "HoveringTV Component\nMapped directly from Figma Node `190:68` (\"Component 2\")\nFeaturing 10 floating vintage CRT TV sets smoothly looping through the 4 Figma keyframe variants.",
+      "reactDocgen": {
+        "description": "HoveringTV Component\nMapped directly from Figma Node `190:68` (\"Component 2\")\nFeaturing 10 floating vintage CRT TV sets smoothly looping through the 4 Figma keyframe variants.",
+        "methods": [],
+        "displayName": "HoveringTV",
+        "definedInFile": "C:\\Users\\hp\\.gemini\\antigravity-ide\\scratch\\design-system-storybook\\src\\components\\HoveringTV\\HoveringTV.tsx",
+        "actualName": "HoveringTV",
+        "exportName": "HoveringTV",
+        "props": {
+          "variant": {
+            "required": false,
+            "tsType": {
+              "name": "union",
+              "raw": "'animated' | 'Default' | 'Variant2' | 'Variant3' | 'Variant4'",
+              "elements": [
+                {
+                  "name": "literal",
+                  "value": "'animated'"
+                },
+                {
+                  "name": "literal",
+                  "value": "'Default'"
+                },
+                {
+                  "name": "literal",
+                  "value": "'Variant2'"
+                },
+                {
+                  "name": "literal",
+                  "value": "'Variant3'"
+                },
+                {
+                  "name": "literal",
+                  "value": "'Variant4'"
+                }
+              ]
+            },
+            "description": "Animation mode or static keyframe variant from Figma\n@default 'animated'",
+            "defaultValue": {
+              "value": "'animated'",
+              "computed": false
+            }
+          },
+          "speed": {
+            "required": false,
+            "tsType": {
+              "name": "number"
+            },
+            "description": "Animation cycle speed in seconds (Figma transition duration is 8.296s)\n@default 8.296",
+            "defaultValue": {
+              "value": "8.296",
+              "computed": false
+            }
+          },
+          "items": {
+            "required": false,
+            "tsType": {
+              "name": "Array",
+              "elements": [
+                {
+                  "name": "Partial",
+                  "elements": [
+                    {
+                      "name": "HoveringTVItemConfig"
+                    }
+                  ],
+                  "raw": "Partial<HoveringTVItemConfig>"
+                }
+              ],
+              "raw": "Partial<HoveringTVItemConfig>[]"
+            },
+            "description": "Custom list of TV items or overrides"
+          },
+          "showScanlines": {
+            "required": false,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": "Display retro CRT phosphor scanline texture overlay\n@default true",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "pauseOnHover": {
+            "required": false,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": "Pause floating animation on hover\n@default true",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "interactive": {
+            "required": false,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": "Enable interactive click inspection modal\n@default true",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "onTVClick": {
+            "required": false,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "(item: HoveringTVItemConfig, index: number) => void",
+              "signature": {
+                "arguments": [
+                  {
+                    "type": {
+                      "name": "HoveringTVItemConfig"
+                    },
+                    "name": "item"
+                  },
+                  {
+                    "type": {
+                      "name": "number"
+                    },
+                    "name": "index"
+                  }
+                ],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": "Callback fired when a TV set is clicked"
+          },
+          "className": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "''",
+              "computed": false
+            }
+          },
+          "style": {
+            "required": false,
+            "tsType": {
+              "name": "ReactCSSProperties",
+              "raw": "React.CSSProperties"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "{}",
+              "computed": false
+            }
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "figma-components-hovering-tv--animated-floating-loop",
+          "name": "Animated Floating Loop",
+          "snippet": "const AnimatedFloatingLoop = () => <div\r\n    style={{ width: '100vw', maxWidth: '1400px', margin: '0 auto', padding: '40px 20px' }}>\r\n    <HoveringTV variant=\"animated\" speed={8.296} showScanlines pauseOnHover interactive />\r\n</div>;",
+          "description": "Continuous floating hovering animation through all 4 Figma variants"
+        },
+        {
+          "id": "figma-components-hovering-tv--keyframe-default",
+          "name": "Keyframe Default",
+          "snippet": "const KeyframeDefault = () => <div\r\n    style={{ width: '100vw', maxWidth: '1400px', margin: '0 auto', padding: '40px 20px' }}>\r\n    <HoveringTV variant=\"Default\" showScanlines />\r\n</div>;",
+          "description": "Keyframe 1: Default variant from Figma"
+        },
+        {
+          "id": "figma-components-hovering-tv--keyframe-variant-2",
+          "name": "Keyframe Variant 2",
+          "snippet": "const KeyframeVariant2 = () => <div\r\n    style={{ width: '100vw', maxWidth: '1400px', margin: '0 auto', padding: '40px 20px' }}>\r\n    <HoveringTV variant=\"Variant2\" showScanlines />\r\n</div>;",
+          "description": "Keyframe 2: Variant 2 from Figma"
+        },
+        {
+          "id": "figma-components-hovering-tv--keyframe-variant-3",
+          "name": "Keyframe Variant 3",
+          "snippet": "const KeyframeVariant3 = () => <div\r\n    style={{ width: '100vw', maxWidth: '1400px', margin: '0 auto', padding: '40px 20px' }}>\r\n    <HoveringTV variant=\"Variant3\" showScanlines />\r\n</div>;",
+          "description": "Keyframe 3: Variant 3 from Figma"
+        },
+        {
+          "id": "figma-components-hovering-tv--keyframe-variant-4",
+          "name": "Keyframe Variant 4",
+          "snippet": "const KeyframeVariant4 = () => <div\r\n    style={{ width: '100vw', maxWidth: '1400px', margin: '0 auto', padding: '40px 20px' }}>\r\n    <HoveringTV variant=\"Variant4\" showScanlines />\r\n</div>;",
+          "description": "Keyframe 4: Variant 4 from Figma"
+        },
+        {
+          "id": "figma-components-hovering-tv--dark-ambient-gallery",
+          "name": "Dark Ambient Gallery",
+          "snippet": "const DarkAmbientGallery = () => <div\r\n    style={{\r\n      width: '100vw',\r\n      minHeight: '100vh',\r\n      background: 'radial-gradient(circle at center, #181824 0%, #0C0C12 70%, #060608 100%)',\r\n      padding: '60px 24px',\r\n      display: 'flex',\r\n      flexDirection: 'column',\r\n      alignItems: 'center',\r\n      justifyContent: 'center',\r\n      overflow: 'hidden',\r\n    }}>\r\n    <div style={{ textAlign: 'center', marginBottom: '40px' }}>\r\n        <h1\r\n            style={{\r\n              fontFamily: \"'Rajdhani', sans-serif\",\r\n              fontSize: '48px',\r\n              fontWeight: 700,\r\n              color: '#FFFFFF',\r\n              letterSpacing: '0.05em',\r\n              margin: '0 0 12px 0',\r\n              textTransform: 'uppercase',\r\n            }}>Hovering TV Gallery\r\n                    </h1>\r\n        <p\r\n            style={{\r\n              fontFamily: \"'Barlow Condensed', sans-serif\",\r\n              fontSize: '18px',\r\n              fontWeight: 500,\r\n              color: '#A1A1AA',\r\n              letterSpacing: '0.1em',\r\n              textTransform: 'uppercase',\r\n              margin: 0,\r\n            }}>Vintage 3D CRT Floating Showcase // 10 Channel Broadcast\r\n                    </p>\r\n    </div>\r\n\r\n    <div style={{ width: '100%', maxWidth: '1400px' }}>\r\n        <HoveringTV variant=\"animated\" speed={8.296} />\r\n    </div>\r\n</div>;",
+          "description": "Immersive dark ambient gallery background"
+        },
+        {
+          "id": "figma-components-hovering-tv--standalone-tv-unit",
+          "name": "Standalone TV Unit",
+          "snippet": "const StandaloneTVUnit = () => (\r\n  <div\r\n    style={{\r\n      display: 'flex',\r\n      gap: '48px',\r\n      alignItems: 'center',\r\n      justifyContent: 'center',\r\n      padding: '60px 20px',\r\n      flexWrap: 'wrap',\r\n      background: '#0E0E13',\r\n    }}\r\n  >\r\n    <div style={{ textAlign: 'center' }}>\r\n      <HoveringTVUnit width=\"320px\" floating={true} />\r\n      <p style={{ color: '#A1A1AA', marginTop: '16px', fontFamily: \"'Rajdhani', sans-serif\", fontSize: '16px' }}>\r\n        Floating Vintage CRT (Animated)\r\n      </p>\r\n    </div>\r\n    <div style={{ textAlign: 'center' }}>\r\n      <HoveringTVUnit width=\"320px\" floating={false} />\r\n      <p style={{ color: '#A1A1AA', marginTop: '16px', fontFamily: \"'Rajdhani', sans-serif\", fontSize: '16px' }}>\r\n        Static Vintage CRT\r\n      </p>\r\n    </div>\r\n  </div>\r\n);",
+          "description": "Standalone Hovering TV Unit"
+        }
+      ],
+      "import": "import { HoveringTV, HoveringTVUnit } from \"design-system-storybook\";"
+    },
     "figma-components-marquee": {
       "id": "figma-components-marquee",
       "name": "Marquee",
@@ -3731,6 +3941,6 @@
   },
   "meta": {
     "docgen": "react-docgen",
-    "durationMs": 1321
+    "durationMs": 1200
   }
 }

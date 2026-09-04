@@ -1,5 +1,0 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{d as t}from"./iframe-rTMCNpcK.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({testId:e})=>(0,r.jsx)(`div`,{className:`stateactivetypeghost-root`,"data-testid":e,children:`StateActiveTypeGhost Content`}),i.__docgenInfo={description:``,methods:[],displayName:`StateActiveTypeGhost`,props:{testId:{required:!1,tsType:{name:`string`},description:`Figma Node ID: 51:633`}}}})))()}var o,s,c;function l(){return(l=e((()=>{a(),o={title:`Figma Components/StateActiveTypeGhost`,component:i,parameters:{layout:`centered`,docs:{description:{component:"Auto-generated component from Figma layer `State=Active, Type=Ghost`."}}},tags:[`autodocs`]},s={args:{testId:`StateActiveTypeGhost-default`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    testId: 'StateActiveTypeGhost-default'
-  }
-}`,...s.parameters?.docs?.source}}},c=[`Default`]})))()}l();export{s as Default,c as __namedExportsOrder,o as default};

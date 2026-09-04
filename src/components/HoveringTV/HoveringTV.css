@@ -1,0 +1,1028 @@
+/* HoveringTV Component Styles & Keyframe Animations */
+/* Mapped precisely from Figma Node 190:68 (Component 2) */
+
+.hovering-tv-container {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  aspect-ratio: 3975 / 3766;
+  margin: 0 auto;
+  overflow: visible;
+  user-select: none;
+}
+
+.hovering-tv-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hovering-tv-item {
+  position: absolute;
+  transform-origin: center center;
+  transition: filter 0.3s ease, z-index 0.3s step-end;
+  cursor: pointer;
+  will-change: transform, left, top, width, height;
+}
+
+.hovering-tv-item:hover {
+  z-index: 40 !important;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5)) brightness(1.08) !important;
+}
+
+.hovering-tv-screen-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CRT Screen Image sitting inside bezel */
+.hovering-tv-screen-img {
+  position: absolute;
+  left: 9%;
+  top: 9%;
+  width: 82%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Vintage CRT TV casing overlay on top */
+.hovering-tv-casing-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Optional retro CRT scanline texture */
+.hovering-tv-scanlines {
+  position: absolute;
+  left: 9%;
+  top: 9%;
+  width: 82%;
+  height: 75%;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 3;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 4px, 6px 100%;
+  opacity: 0.6;
+}
+
+/* Base static positioning and drop-shadows for each TV */
+
+/* --- TV 0: Frame 485 --- */
+.hovering-tv-item-0 {
+  left: 13.459%;
+  top: 0.000%;
+  width: 18.440%;
+  height: 17.913%;
+  transform: rotate(-18.14deg);
+  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  z-index: 1;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-0 {
+  left: 13.459%;
+  top: 0.000%;
+  width: 18.440%;
+  height: 17.913%;
+  transform: rotate(-18.14deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-0 {
+  left: 11.094%;
+  top: -0.982%;
+  width: 20.619%;
+  height: 20.443%;
+  transform: rotate(-18.14deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-0 {
+  left: 8.906%;
+  top: -3.186%;
+  width: 22.314%;
+  height: 22.472%;
+  transform: rotate(-18.14deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-0 {
+  left: 11.447%;
+  top: -0.558%;
+  width: 20.319%;
+  height: 20.090%;
+  transform: rotate(-18.14deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-0 {
+  animation: tv-float-0 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-0 {
+  0%, 100% {
+    left: 13.459%;
+    top: 0.000%;
+    width: 18.440%;
+    height: 17.913%;
+    transform: rotate(-18.14deg);
+  }
+  25% {
+    left: 11.094%;
+    top: -0.982%;
+    width: 20.619%;
+    height: 20.443%;
+    transform: rotate(-18.14deg);
+  }
+  50% {
+    left: 8.906%;
+    top: -3.186%;
+    width: 22.314%;
+    height: 22.472%;
+    transform: rotate(-18.14deg);
+  }
+  75% {
+    left: 11.447%;
+    top: -0.558%;
+    width: 20.319%;
+    height: 20.090%;
+    transform: rotate(-18.14deg);
+  }
+}
+
+/* --- TV 1: Frame 483 --- */
+.hovering-tv-item-1 {
+  left: 64.352%;
+  top: 6.001%;
+  width: 19.535%;
+  height: 18.792%;
+  transform: rotate(15.7deg);
+  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  z-index: 2;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-1 {
+  left: 64.352%;
+  top: 6.001%;
+  width: 19.535%;
+  height: 18.792%;
+  transform: rotate(15.7deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-1 {
+  left: 64.050%;
+  top: 3.877%;
+  width: 21.877%;
+  height: 21.543%;
+  transform: rotate(0deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-1 {
+  left: 63.912%;
+  top: 4.140%;
+  width: 19.987%;
+  height: 19.318%;
+  transform: rotate(0deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-1 {
+  left: 63.673%;
+  top: 1.460%;
+  width: 22.292%;
+  height: 22.039%;
+  transform: rotate(0deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-1 {
+  animation: tv-float-1 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-1 {
+  0%, 100% {
+    left: 64.352%;
+    top: 6.001%;
+    width: 19.535%;
+    height: 18.792%;
+    transform: rotate(15.7deg);
+  }
+  25% {
+    left: 64.050%;
+    top: 3.877%;
+    width: 21.877%;
+    height: 21.543%;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 63.912%;
+    top: 4.140%;
+    width: 19.987%;
+    height: 19.318%;
+    transform: rotate(0deg);
+  }
+  75% {
+    left: 63.673%;
+    top: 1.460%;
+    width: 22.292%;
+    height: 22.039%;
+    transform: rotate(0deg);
+  }
+}
+
+/* --- TV 2: Frame 484 --- */
+.hovering-tv-item-2 {
+  left: 39.799%;
+  top: 24.907%;
+  width: 14.717%;
+  height: 13.683%;
+  transform: rotate(5.44deg);
+  filter: drop-shadow(-30px 30px 12px rgba(0, 0, 0, 0.25));
+  z-index: 3;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-2 {
+  left: 39.799%;
+  top: 24.907%;
+  width: 14.717%;
+  height: 13.683%;
+  transform: rotate(5.44deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-2 {
+  left: 38.994%;
+  top: 23.978%;
+  width: 18.468%;
+  height: 18.457%;
+  transform: rotate(5.44deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-2 {
+  left: 41.459%;
+  top: 22.013%;
+  width: 19.447%;
+  height: 20.024%;
+  transform: rotate(5.44deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-2 {
+  left: 39.371%;
+  top: 22.013%;
+  width: 18.408%;
+  height: 18.370%;
+  transform: rotate(5.44deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-2 {
+  animation: tv-float-2 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-2 {
+  0%, 100% {
+    left: 39.799%;
+    top: 24.907%;
+    width: 14.717%;
+    height: 13.683%;
+    transform: rotate(5.44deg);
+  }
+  25% {
+    left: 38.994%;
+    top: 23.978%;
+    width: 18.468%;
+    height: 18.457%;
+    transform: rotate(5.44deg);
+  }
+  50% {
+    left: 41.459%;
+    top: 22.013%;
+    width: 19.447%;
+    height: 20.024%;
+    transform: rotate(5.44deg);
+  }
+  75% {
+    left: 39.371%;
+    top: 22.013%;
+    width: 18.408%;
+    height: 18.370%;
+    transform: rotate(5.44deg);
+  }
+}
+
+/* --- TV 3: Frame 520 --- */
+.hovering-tv-item-3 {
+  left: 9.434%;
+  top: 33.856%;
+  width: 22.468%;
+  height: 23.088%;
+  transform: rotate(-23.34deg);
+  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  z-index: 4;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-3 {
+  left: 9.434%;
+  top: 33.856%;
+  width: 22.468%;
+  height: 23.088%;
+  transform: rotate(-23.34deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-3 {
+  left: 10.264%;
+  top: 34.068%;
+  width: 21.592%;
+  height: 22.023%;
+  transform: rotate(-23.34deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-3 {
+  left: 9.660%;
+  top: 34.838%;
+  width: 20.659%;
+  height: 20.919%;
+  transform: rotate(-23.34deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-3 {
+  left: 9.509%;
+  top: 34.121%;
+  width: 20.735%;
+  height: 21.009%;
+  transform: rotate(-23.34deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-3 {
+  animation: tv-float-3 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-3 {
+  0%, 100% {
+    left: 9.434%;
+    top: 33.856%;
+    width: 22.468%;
+    height: 23.088%;
+    transform: rotate(-23.34deg);
+  }
+  25% {
+    left: 10.264%;
+    top: 34.068%;
+    width: 21.592%;
+    height: 22.023%;
+    transform: rotate(-23.34deg);
+  }
+  50% {
+    left: 9.660%;
+    top: 34.838%;
+    width: 20.659%;
+    height: 20.919%;
+    transform: rotate(-23.34deg);
+  }
+  75% {
+    left: 9.509%;
+    top: 34.121%;
+    width: 20.735%;
+    height: 21.009%;
+    transform: rotate(-23.34deg);
+  }
+}
+
+/* --- TV 4: Frame 519 --- */
+.hovering-tv-item-4 {
+  left: 33.718%;
+  top: 38.938%;
+  width: 16.166%;
+  height: 16.184%;
+  transform: rotate(-21.89deg);
+  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  z-index: 5;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-4 {
+  left: 33.718%;
+  top: 38.938%;
+  width: 16.166%;
+  height: 16.184%;
+  transform: rotate(-21.89deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-4 {
+  left: 33.484%;
+  top: 38.901%;
+  width: 17.099%;
+  height: 17.302%;
+  transform: rotate(-21.89deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-4 {
+  left: 32.704%;
+  top: 37.812%;
+  width: 17.962%;
+  height: 18.370%;
+  transform: rotate(-21.89deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-4 {
+  left: 31.774%;
+  top: 37.175%;
+  width: 19.024%;
+  height: 19.862%;
+  transform: rotate(-21.89deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-4 {
+  animation: tv-float-4 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-4 {
+  0%, 100% {
+    left: 33.718%;
+    top: 38.938%;
+    width: 16.166%;
+    height: 16.184%;
+    transform: rotate(-21.89deg);
+  }
+  25% {
+    left: 33.484%;
+    top: 38.901%;
+    width: 17.099%;
+    height: 17.302%;
+    transform: rotate(-21.89deg);
+  }
+  50% {
+    left: 32.704%;
+    top: 37.812%;
+    width: 17.962%;
+    height: 18.370%;
+    transform: rotate(-21.89deg);
+  }
+  75% {
+    left: 31.774%;
+    top: 37.175%;
+    width: 19.024%;
+    height: 19.862%;
+    transform: rotate(-21.89deg);
+  }
+}
+
+/* --- TV 5: Group 5449 --- */
+.hovering-tv-item-5 {
+  left: 74.541%;
+  top: 41.715%;
+  width: 12.020%;
+  height: 12.079%;
+  transform: rotate(28.01deg);
+  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  z-index: 6;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-5 {
+  left: 74.541%;
+  top: 41.715%;
+  width: 12.020%;
+  height: 12.079%;
+  transform: rotate(28.01deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-5 {
+  left: 74.297%;
+  top: 40.967%;
+  width: 13.545%;
+  height: 13.784%;
+  transform: rotate(28.01deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-5 {
+  left: 74.455%;
+  top: 40.693%;
+  width: 12.433%;
+  height: 12.539%;
+  transform: rotate(28.01deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-5 {
+  left: 72.234%;
+  top: 40.547%;
+  width: 13.718%;
+  height: 13.978%;
+  transform: rotate(28.01deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-5 {
+  animation: tv-float-5 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-5 {
+  0%, 100% {
+    left: 74.541%;
+    top: 41.715%;
+    width: 12.020%;
+    height: 12.079%;
+    transform: rotate(28.01deg);
+  }
+  25% {
+    left: 74.297%;
+    top: 40.967%;
+    width: 13.545%;
+    height: 13.784%;
+    transform: rotate(28.01deg);
+  }
+  50% {
+    left: 74.455%;
+    top: 40.693%;
+    width: 12.433%;
+    height: 12.539%;
+    transform: rotate(28.01deg);
+  }
+  75% {
+    left: 72.234%;
+    top: 40.547%;
+    width: 13.718%;
+    height: 13.978%;
+    transform: rotate(28.01deg);
+  }
+}
+
+/* --- TV 6: Frame 522 --- */
+.hovering-tv-item-6 {
+  left: 67.774%;
+  top: 53.808%;
+  width: 17.213%;
+  height: 16.328%;
+  transform: rotate(13.07deg);
+  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  z-index: 7;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-6 {
+  left: 67.774%;
+  top: 53.808%;
+  width: 17.213%;
+  height: 16.328%;
+  transform: rotate(13.07deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-6 {
+  left: 68.176%;
+  top: 52.496%;
+  width: 19.540%;
+  height: 19.116%;
+  transform: rotate(13.07deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-6 {
+  left: 67.170%;
+  top: 51.221%;
+  width: 20.531%;
+  height: 20.351%;
+  transform: rotate(13.07deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-6 {
+  left: 66.239%;
+  top: 50.876%;
+  width: 21.575%;
+  height: 21.702%;
+  transform: rotate(13.07deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-6 {
+  animation: tv-float-6 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-6 {
+  0%, 100% {
+    left: 67.774%;
+    top: 53.808%;
+    width: 17.213%;
+    height: 16.328%;
+    transform: rotate(13.07deg);
+  }
+  25% {
+    left: 68.176%;
+    top: 52.496%;
+    width: 19.540%;
+    height: 19.116%;
+    transform: rotate(13.07deg);
+  }
+  50% {
+    left: 67.170%;
+    top: 51.221%;
+    width: 20.531%;
+    height: 20.351%;
+    transform: rotate(13.07deg);
+  }
+  75% {
+    left: 66.239%;
+    top: 50.876%;
+    width: 21.575%;
+    height: 21.702%;
+    transform: rotate(13.07deg);
+  }
+}
+
+/* --- TV 7: Frame 521 --- */
+.hovering-tv-item-7 {
+  left: 13.887%;
+  top: 74.190%;
+  width: 16.712%;
+  height: 15.730%;
+  transform: rotate(-6.59deg);
+  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  z-index: 8;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-7 {
+  left: 13.887%;
+  top: 74.190%;
+  width: 16.712%;
+  height: 15.730%;
+  transform: rotate(-6.59deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-7 {
+  left: 12.906%;
+  top: 73.155%;
+  width: 17.419%;
+  height: 16.628%;
+  transform: rotate(-6.59deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-7 {
+  left: 11.824%;
+  top: 72.411%;
+  width: 18.307%;
+  height: 17.796%;
+  transform: rotate(-6.59deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-7 {
+  left: 12.111%;
+  top: 72.735%;
+  width: 19.009%;
+  height: 18.765%;
+  transform: rotate(-6.59deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-7 {
+  animation: tv-float-7 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-7 {
+  0%, 100% {
+    left: 13.887%;
+    top: 74.190%;
+    width: 16.712%;
+    height: 15.730%;
+    transform: rotate(-6.59deg);
+  }
+  25% {
+    left: 12.906%;
+    top: 73.155%;
+    width: 17.419%;
+    height: 16.628%;
+    transform: rotate(-6.59deg);
+  }
+  50% {
+    left: 11.824%;
+    top: 72.411%;
+    width: 18.307%;
+    height: 17.796%;
+    transform: rotate(-6.59deg);
+  }
+  75% {
+    left: 12.111%;
+    top: 72.735%;
+    width: 19.009%;
+    height: 18.765%;
+    transform: rotate(-6.59deg);
+  }
+}
+
+/* --- TV 8: Frame 523 --- */
+.hovering-tv-item-8 {
+  left: 32.428%;
+  top: 78.943%;
+  width: 18.918%;
+  height: 19.264%;
+  transform: rotate(-24.25deg);
+  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  z-index: 9;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-8 {
+  left: 32.428%;
+  top: 78.943%;
+  width: 18.918%;
+  height: 19.264%;
+  transform: rotate(-24.25deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-8 {
+  left: 31.711%;
+  top: 77.860%;
+  width: 20.941%;
+  height: 21.760%;
+  transform: rotate(-24.25deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-8 {
+  left: 30.767%;
+  top: 76.660%;
+  width: 21.384%;
+  height: 22.448%;
+  transform: rotate(-24.25deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-8 {
+  left: 31.467%;
+  top: 75.998%;
+  width: 21.396%;
+  height: 22.602%;
+  transform: rotate(-24.25deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-8 {
+  animation: tv-float-8 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-8 {
+  0%, 100% {
+    left: 32.428%;
+    top: 78.943%;
+    width: 18.918%;
+    height: 19.264%;
+    transform: rotate(-24.25deg);
+  }
+  25% {
+    left: 31.711%;
+    top: 77.860%;
+    width: 20.941%;
+    height: 21.760%;
+    transform: rotate(-24.25deg);
+  }
+  50% {
+    left: 30.767%;
+    top: 76.660%;
+    width: 21.384%;
+    height: 22.448%;
+    transform: rotate(-24.25deg);
+  }
+  75% {
+    left: 31.467%;
+    top: 75.998%;
+    width: 21.396%;
+    height: 22.602%;
+    transform: rotate(-24.25deg);
+  }
+}
+
+/* --- TV 9: Frame 524 --- */
+.hovering-tv-item-9 {
+  left: 77.560%;
+  top: 81.545%;
+  width: 10.735%;
+  height: 10.319%;
+  transform: rotate(16.1deg);
+  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  z-index: 10;
+}
+
+/* Static Variant Classes */
+.hovering-tv-variant-Default .hovering-tv-item-9 {
+  left: 77.560%;
+  top: 81.545%;
+  width: 10.735%;
+  height: 10.319%;
+  transform: rotate(16.1deg);
+}
+
+.hovering-tv-variant-Variant2 .hovering-tv-item-9 {
+  left: 74.199%;
+  top: 80.672%;
+  width: 11.970%;
+  height: 11.768%;
+  transform: rotate(16.1deg);
+}
+
+.hovering-tv-variant-Variant3 .hovering-tv-item-9 {
+  left: 72.981%;
+  top: 79.740%;
+  width: 12.989%;
+  height: 13.011%;
+  transform: rotate(16.1deg);
+}
+
+.hovering-tv-variant-Variant4 .hovering-tv-item-9 {
+  left: 73.912%;
+  top: 79.395%;
+  width: 13.907%;
+  height: 14.206%;
+  transform: rotate(16.1deg);
+}
+
+/* Animated Floating Loop */
+.hovering-tv-variant-animated .hovering-tv-item-9 {
+  animation: tv-float-9 var(--hovering-tv-speed, 8.296s) ease-in-out infinite;
+}
+
+@keyframes tv-float-9 {
+  0%, 100% {
+    left: 77.560%;
+    top: 81.545%;
+    width: 10.735%;
+    height: 10.319%;
+    transform: rotate(16.1deg);
+  }
+  25% {
+    left: 74.199%;
+    top: 80.672%;
+    width: 11.970%;
+    height: 11.768%;
+    transform: rotate(16.1deg);
+  }
+  50% {
+    left: 72.981%;
+    top: 79.740%;
+    width: 12.989%;
+    height: 13.011%;
+    transform: rotate(16.1deg);
+  }
+  75% {
+    left: 73.912%;
+    top: 79.395%;
+    width: 13.907%;
+    height: 14.206%;
+    transform: rotate(16.1deg);
+  }
+}
+
+/* Pause animation on stage hover if enabled */
+.hovering-tv-pause-on-hover:hover .hovering-tv-item {
+  animation-play-state: paused;
+}
+
+/* Standalone Single Hovering TV Unit */
+.hovering-tv-unit {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  max-width: 480px;
+  display: inline-block;
+  user-select: none;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.28));
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+}
+
+.hovering-tv-unit:hover {
+  transform: translateY(-8px) scale(1.04);
+  filter: drop-shadow(0 30px 45px rgba(0, 0, 0, 0.38));
+}
+
+.hovering-tv-unit-floating {
+  animation: tv-unit-float 6s ease-in-out infinite alternate;
+}
+
+@keyframes tv-unit-float {
+  0% {
+    transform: translateY(0) rotate(-1.5deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(1deg);
+  }
+  100% {
+    transform: translateY(-8px) rotate(-0.5deg);
+  }
+}
+
+/* Retro Focus Modal Backdrop */
+.hovering-tv-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 14, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 24px;
+  animation: tv-fade-in 0.25s ease-out;
+}
+
+@keyframes tv-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hovering-tv-modal-content {
+  position: relative;
+  background: #18181B;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 32px 32px 24px;
+  max-width: 580px;
+  width: 100%;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: tv-modal-scale 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes tv-modal-scale {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.hovering-tv-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  color: #F4F4F5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.hovering-tv-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.08);
+}
+
+.hovering-tv-modal-tv {
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 1 / 1;
+  filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.6));
+}
+
+.hovering-tv-modal-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hovering-tv-modal-title {
+  font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
+  margin: 0 0 6px 0;
+}
+
+.hovering-tv-modal-desc {
+  font-family: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #A1A1AA;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+

@@ -92,3 +92,4 @@ export * from './components/Property1Frame18/Property1Frame18';
 export * from './components/ProductDetails/ProductDetails';
 export * from './components/ReviewCard/ReviewCard';
 export * from './components/CustomerReviews/CustomerReviews';
+export * from './components/HoveringTV';
