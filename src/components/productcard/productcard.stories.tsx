@@ -34,38 +34,34 @@ type Story = StoryObj<typeof meta>;
 export const BombayDreams: Story = {
   args: {
     variant: 'bombay dreams',
-    imageUrl: '/car.png',
   },
 };
 
 export const KonkanGhats: Story = {
   args: {
     variant: 'konkan ghats',
-    imageUrl: '/car.png',
   },
 };
 
 export const KaaliPeeli: Story = {
   args: {
     variant: 'Kaali - Peeli',
-    imageUrl: '/car.png',
   },
 };
 
 export const RetroRohtak: Story = {
   args: {
     variant: 'Retro rohtak',
-    imageUrl: '/car.png',
   },
 };
 
 export const AllVariantsGrid: Story = {
   render: () => (
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 456px))', gap: '32px', padding: '32px', maxWidth: '1400px', margin: '0 auto', background: '#F8F9FA' }}>
-      <productcard variant="bombay dreams" imageUrl="/car.png" />
-      <productcard variant="konkan ghats" imageUrl="/car.png" />
-      <productcard variant="Kaali - Peeli" imageUrl="/car.png" />
-      <productcard variant="Retro rohtak" imageUrl="/car.png" />
+      <productcard variant="bombay dreams" />
+      <productcard variant="konkan ghats" />
+      <productcard variant="Kaali - Peeli" />
+      <productcard variant="Retro rohtak" />
     </div>
   ),
 };

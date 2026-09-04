@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{d as t}from"./iframe-CWJzfnpy.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({testId:e})=>(0,r.jsx)(`div`,{className:`selectedtruestateenablediconfalse-root`,"data-testid":e,children:`SelectedTrueStateEnabledIconFalse Content`}),i.__docgenInfo={description:``,methods:[],displayName:`SelectedTrueStateEnabledIconFalse`,props:{testId:{required:!1,tsType:{name:`string`},description:`Figma Node ID: 37:672`}}}})))()}var o,s,c;function l(){return(l=e((()=>{a(),o={title:`Figma Components/SelectedTrueStateEnabledIconFalse`,component:i,parameters:{layout:`centered`,docs:{description:{component:"Auto-generated component from Figma layer `Selected=True, State=Enabled, Icon=False`."}}},tags:[`autodocs`]},s={args:{testId:`SelectedTrueStateEnabledIconFalse-default`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    testId: 'SelectedTrueStateEnabledIconFalse-default'
+  }
+}`,...s.parameters?.docs?.source}}},c=[`Default`]})))()}l();export{s as Default,c as __namedExportsOrder,o as default};

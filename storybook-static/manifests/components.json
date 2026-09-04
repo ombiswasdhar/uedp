@@ -3090,11 +3090,7 @@
             "tsType": {
               "name": "string"
             },
-            "description": "",
-            "defaultValue": {
-              "value": "'/car.png'",
-              "computed": false
-            }
+            "description": ""
           },
           "onClick": {
             "required": false,
@@ -3128,27 +3124,27 @@
         {
           "id": "figma-components-product-card--bombay-dreams",
           "name": "Bombay Dreams",
-          "snippet": "const BombayDreams = () => <productcard variant=\"bombay dreams\" imageUrl=\"/car.png\" />;"
+          "snippet": "const BombayDreams = () => <productcard variant=\"bombay dreams\" />;"
         },
         {
           "id": "figma-components-product-card--konkan-ghats",
           "name": "Konkan Ghats",
-          "snippet": "const KonkanGhats = () => <productcard variant=\"konkan ghats\" imageUrl=\"/car.png\" />;"
+          "snippet": "const KonkanGhats = () => <productcard variant=\"konkan ghats\" />;"
         },
         {
           "id": "figma-components-product-card--kaali-peeli",
           "name": "Kaali Peeli",
-          "snippet": "const KaaliPeeli = () => <productcard variant=\"Kaali - Peeli\" imageUrl=\"/car.png\" />;"
+          "snippet": "const KaaliPeeli = () => <productcard variant=\"Kaali - Peeli\" />;"
         },
         {
           "id": "figma-components-product-card--retro-rohtak",
           "name": "Retro Rohtak",
-          "snippet": "const RetroRohtak = () => <productcard variant=\"Retro rohtak\" imageUrl=\"/car.png\" />;"
+          "snippet": "const RetroRohtak = () => <productcard variant=\"Retro rohtak\" />;"
         },
         {
           "id": "figma-components-product-card--all-variants-grid",
           "name": "All Variants Grid",
-          "snippet": "const AllVariantsGrid = () => (\r\n  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 456px))', gap: '32px', padding: '32px', maxWidth: '1400px', margin: '0 auto', background: '#F8F9FA' }}>\r\n    <productcard variant=\"bombay dreams\" imageUrl=\"/car.png\" />\r\n    <productcard variant=\"konkan ghats\" imageUrl=\"/car.png\" />\r\n    <productcard variant=\"Kaali - Peeli\" imageUrl=\"/car.png\" />\r\n    <productcard variant=\"Retro rohtak\" imageUrl=\"/car.png\" />\r\n  </div>\r\n);"
+          "snippet": "const AllVariantsGrid = () => (\r\n  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 456px))', gap: '32px', padding: '32px', maxWidth: '1400px', margin: '0 auto', background: '#F8F9FA' }}>\r\n    <productcard variant=\"bombay dreams\" />\r\n    <productcard variant=\"konkan ghats\" />\r\n    <productcard variant=\"Kaali - Peeli\" />\r\n    <productcard variant=\"Retro rohtak\" />\r\n  </div>\r\n);"
         }
       ],
       "import": "import { productcard } from \"design-system-storybook\";"
@@ -3572,6 +3568,6 @@
   },
   "meta": {
     "docgen": "react-docgen",
-    "durationMs": 1238
+    "durationMs": 1345
   }
 }

@@ -594,7 +594,7 @@
 <main>
   <div class="wrap">
     <div class="note info" style="margin-bottom: 16px;">
-            <strong>Tip:</strong> You are using <code>react-docgen</code> (the default). Generation took <strong>1.2s</strong>. For higher quality prop types, consider switching to <code>react-docgen-typescript</code> in your <code>main.ts</code>:
+            <strong>Tip:</strong> You are using <code>react-docgen</code> (the default). Generation took <strong>1.3s</strong>. For higher quality prop types, consider switching to <code>react-docgen-typescript</code> in your <code>main.ts</code>:
             <pre><code>typescript: {
   reactDocgen: 'react-docgen-typescript',
 }</code></pre>
@@ -3021,7 +3021,7 @@ className?: string = &#39;&#39;
 
 code?: string
 
-imageUrl?: string = &#39;/car.png&#39;
+imageUrl?: string
 
 onClick?: () =&gt; void
 
@@ -3064,7 +3064,7 @@ variant?: | &#39;bombay dreams&#39;
               </div>
               
               
-              <pre><code>const BombayDreams = () =&gt; &lt;productcard variant=&quot;bombay dreams&quot; imageUrl=&quot;/car.png&quot; /&gt;;</code></pre>
+              <pre><code>const BombayDreams = () =&gt; &lt;productcard variant=&quot;bombay dreams&quot; /&gt;;</code></pre>
             </div>
             <div class="note ok">
               <div class="row">
@@ -3073,7 +3073,7 @@ variant?: | &#39;bombay dreams&#39;
               </div>
               
               
-              <pre><code>const KonkanGhats = () =&gt; &lt;productcard variant=&quot;konkan ghats&quot; imageUrl=&quot;/car.png&quot; /&gt;;</code></pre>
+              <pre><code>const KonkanGhats = () =&gt; &lt;productcard variant=&quot;konkan ghats&quot; /&gt;;</code></pre>
             </div>
             <div class="note ok">
               <div class="row">
@@ -3082,7 +3082,7 @@ variant?: | &#39;bombay dreams&#39;
               </div>
               
               
-              <pre><code>const KaaliPeeli = () =&gt; &lt;productcard variant=&quot;Kaali - Peeli&quot; imageUrl=&quot;/car.png&quot; /&gt;;</code></pre>
+              <pre><code>const KaaliPeeli = () =&gt; &lt;productcard variant=&quot;Kaali - Peeli&quot; /&gt;;</code></pre>
             </div>
             <div class="note ok">
               <div class="row">
@@ -3091,7 +3091,7 @@ variant?: | &#39;bombay dreams&#39;
               </div>
               
               
-              <pre><code>const RetroRohtak = () =&gt; &lt;productcard variant=&quot;Retro rohtak&quot; imageUrl=&quot;/car.png&quot; /&gt;;</code></pre>
+              <pre><code>const RetroRohtak = () =&gt; &lt;productcard variant=&quot;Retro rohtak&quot; /&gt;;</code></pre>
             </div>
             <div class="note ok">
               <div class="row">
@@ -3102,10 +3102,10 @@ variant?: | &#39;bombay dreams&#39;
               
               <pre><code>const AllVariantsGrid = () =&gt; (
   &lt;div style={{ display: &#39;grid&#39;, gridTemplateColumns: &#39;repeat(auto-fit, minmax(360px, 456px))&#39;, gap: &#39;32px&#39;, padding: &#39;32px&#39;, maxWidth: &#39;1400px&#39;, margin: &#39;0 auto&#39;, background: &#39;#F8F9FA&#39; }}&gt;
-    &lt;productcard variant=&quot;bombay dreams&quot; imageUrl=&quot;/car.png&quot; /&gt;
-    &lt;productcard variant=&quot;konkan ghats&quot; imageUrl=&quot;/car.png&quot; /&gt;
-    &lt;productcard variant=&quot;Kaali - Peeli&quot; imageUrl=&quot;/car.png&quot; /&gt;
-    &lt;productcard variant=&quot;Retro rohtak&quot; imageUrl=&quot;/car.png&quot; /&gt;
+    &lt;productcard variant=&quot;bombay dreams&quot; /&gt;
+    &lt;productcard variant=&quot;konkan ghats&quot; /&gt;
+    &lt;productcard variant=&quot;Kaali - Peeli&quot; /&gt;
+    &lt;productcard variant=&quot;Retro rohtak&quot; /&gt;
   &lt;/div&gt;
 );</code></pre>
             </div>

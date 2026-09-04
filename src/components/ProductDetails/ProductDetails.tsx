@@ -2,6 +2,7 @@ import React from 'react';
 import { Nav } from '../Nav/Nav';
 import { Marquee } from '../Marquee/Marquee';
 import { Buttons } from '../Buttons/Buttons';
+import kaaliPeeliImg from '../../assets/products/kaali-peeli.png';
 import './ProductDetails.css';
 
 export const ProductDetails: React.FC = () => {
@@ -29,7 +30,7 @@ export const ProductDetails: React.FC = () => {
             <div className="main-image-container">
               {/* Main Product Image */}
               <img 
-                src="/car.png" 
+                src={kaaliPeeliImg} 
                 alt="Kaali-Peeli Bombay Taxi Toy Car" 
                 className="main-image"
               />
@@ -40,7 +41,7 @@ export const ProductDetails: React.FC = () => {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <div key={i} className={`thumbnail-square ${i === 1 ? 'active' : ''}`}>
                     <img 
-                      src="/car.png" 
+                      src={kaaliPeeliImg} 
                       alt={`Thumbnail ${i}`} 
                     />
                   </div>

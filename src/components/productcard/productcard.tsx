@@ -1,6 +1,11 @@
 import React from 'react';
 import './productcard.css';
 
+import bombayDreamsImg from '../../assets/products/bombay-dreams.png';
+import konkanGhatsImg from '../../assets/products/konkan-ghats.png';
+import kaaliPeeliImg from '../../assets/products/kaali-peeli.png';
+import retroRohtakImg from '../../assets/products/retro-rohtak.png';
+
 export type ProductCardVariant = 
   | 'bombay dreams' 
   | 'konkan ghats' 
@@ -23,13 +28,14 @@ export interface productcardProps {
   className?: string;
 }
 
-const VARIANT_DEFAULTS: Record<string, { title: string; price: string; series: string; badge: string; code: string }> = {
+const VARIANT_CONFIG: Record<string, { title: string; price: string; series: string; badge: string; code: string; defaultImage: string }> = {
   'bombay dreams': {
     title: 'Bombay dreams',
     price: '₹1,850',
     series: 'SEDAN & HATCHBACK — SERIES 01',
     badge: 'BESTSELLER',
     code: 'PS-KG-01',
+    defaultImage: bombayDreamsImg,
   },
   'konkan ghats': {
     title: 'KONKAN GHATS',
@@ -37,6 +43,7 @@ const VARIANT_DEFAULTS: Record<string, { title: string; price: string; series: s
     series: 'MINI VANS & BUSES — SERIES 01',
     badge: 'BESTSELLER',
     code: 'PS-KG-01',
+    defaultImage: konkanGhatsImg,
   },
   'Variant3': {
     title: 'Kaali - Peeli',
@@ -44,6 +51,7 @@ const VARIANT_DEFAULTS: Record<string, { title: string; price: string; series: s
     series: 'SEDAN & HATCHBACK — SERIES 01',
     badge: 'BESTSELLER',
     code: 'PS-KG-01',
+    defaultImage: kaaliPeeliImg,
   },
   'Kaali - Peeli': {
     title: 'Kaali - Peeli',
@@ -51,6 +59,7 @@ const VARIANT_DEFAULTS: Record<string, { title: string; price: string; series: s
     series: 'SEDAN & HATCHBACK — SERIES 01',
     badge: 'BESTSELLER',
     code: 'PS-KG-01',
+    defaultImage: kaaliPeeliImg,
   },
   'Variant4': {
     title: 'Retro rohtak',
@@ -58,6 +67,7 @@ const VARIANT_DEFAULTS: Record<string, { title: string; price: string; series: s
     series: 'SEDAN & HATCHBACK — SERIES 01',
     badge: 'BESTSELLER',
     code: 'PS-KG-01',
+    defaultImage: retroRohtakImg,
   },
   'Retro rohtak': {
     title: 'Retro rohtak',
@@ -65,6 +75,7 @@ const VARIANT_DEFAULTS: Record<string, { title: string; price: string; series: s
     series: 'SEDAN & HATCHBACK — SERIES 01',
     badge: 'BESTSELLER',
     code: 'PS-KG-01',
+    defaultImage: retroRohtakImg,
   },
 };
 
@@ -76,19 +87,19 @@ export const productcard: React.FC<productcardProps> = ({
   series,
   badge,
   code,
-  imageUrl = '/car.png',
+  imageUrl,
   onClick,
   className = '',
 }) => {
-  const defaults = VARIANT_DEFAULTS[variant] || VARIANT_DEFAULTS['bombay dreams'];
+  const config = VARIANT_CONFIG[variant] || VARIANT_CONFIG['bombay dreams'];
   
-  const displayTitle = title ?? defaults.title;
-  const displayPrice = price ?? defaults.price;
-  const displaySeries = series ?? defaults.series;
-  const displayBadge = badge ?? defaults.badge;
-  const displayCode = code ?? defaults.code;
+  const displayTitle = title ?? config.title;
+  const displayPrice = price ?? config.price;
+  const displaySeries = series ?? config.series;
+  const displayBadge = badge ?? config.badge;
+  const displayCode = code ?? config.code;
+  const activeImage = imageUrl ?? config.defaultImage;
 
-  // Custom styling for Kaali-Peeli title to highlight dual tone if desired
   const isKaaliPeeli = displayTitle.toLowerCase().includes('kaali') && displayTitle.toLowerCase().includes('peeli');
 
   return (
@@ -118,9 +129,17 @@ export const productcard: React.FC<productcardProps> = ({
         {/* Center Vehicle Image */}
         <div className="product-card-image-container">
           <img 
-            src={imageUrl} 
+            src={activeImage} 
             alt={displayTitle} 
-            className="product-card-car-img" 
+            className="product-card-car-img"
+            loading="eager"
+            onError={(e) => {
+              // Fallback to direct path or standard asset
+              const target = e.currentTarget;
+              if (target.src !== config.defaultImage) {
+                target.src = config.defaultImage;
+              }
+            }}
           />
         </div>
 
