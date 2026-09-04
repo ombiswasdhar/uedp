@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{d as t}from"./iframe-CMZhqCtW.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({testId:e})=>(0,r.jsx)(`div`,{className:`property1disabled-root`,"data-testid":e,children:`Property1Disabled Content`}),i.__docgenInfo={description:``,methods:[],displayName:`Property1Disabled`,props:{testId:{required:!1,tsType:{name:`string`},description:`Figma Node ID: 25:576`}}}})))()}var o,s,c;function l(){return(l=e((()=>{a(),o={title:`Figma Components/Property1Disabled`,component:i,parameters:{layout:`centered`,docs:{description:{component:"Auto-generated component from Figma layer `Property 1=Disabled`."}}},tags:[`autodocs`]},s={args:{testId:`Property1Disabled-default`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    testId: 'Property1Disabled-default'
+  }
+}`,...s.parameters?.docs?.source}}},c=[`Default`]})))()}l();export{s as Default,c as __namedExportsOrder,o as default};

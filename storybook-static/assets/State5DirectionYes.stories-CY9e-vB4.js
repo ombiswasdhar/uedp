@@ -1,5 +1,0 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{d as t}from"./iframe-DauKvLNh.js";import{t as n}from"./jsx-runtime-DeHZSEgm.js";var r,i;function a(){return(a=e((()=>{t(),r=n(),i=({testId:e})=>(0,r.jsx)(`div`,{className:`state5directionyes-root`,"data-testid":e,children:`State5DirectionYes Content`}),i.__docgenInfo={description:``,methods:[],displayName:`State5DirectionYes`,props:{testId:{required:!1,tsType:{name:`string`},description:`Figma Node ID: 60:891`}}}})))()}var o,s,c;function l(){return(l=e((()=>{a(),o={title:`Figma Components/State5DirectionYes`,component:i,parameters:{layout:`centered`,docs:{description:{component:"Auto-generated component from Figma layer `State=5, Direction=Yes`."}}},tags:[`autodocs`]},s={args:{testId:`State5DirectionYes-default`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    testId: 'State5DirectionYes-default'
-  }
-}`,...s.parameters?.docs?.source}}},c=[`Default`]})))()}l();export{s as Default,c as __namedExportsOrder,o as default};

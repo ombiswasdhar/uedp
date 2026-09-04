@@ -1,26 +1,22 @@
 import React, { useState } from 'react';
 import './HoveringTV.css';
 
-// Import all 13 exact assets from Figma prototype
-import tvCasingPrimary from '../../assets/tv/64be2eccb7fd5d02b8f18b02fd799197716bd14f.png';
-import tvCasingSecondary from '../../assets/tv/b2d1dacfa4cfd8a02c43cc1ac892510a9a671cb3.png';
-
-import screenImage0 from '../../assets/tv/28b85475091f157411e0f5af8eb13a159101dc9a.png';
-import screenImage1 from '../../assets/tv/fcb0da10123b3fb0c11354f36e64da716bf6a6af.png';
-import screenImage2 from '../../assets/tv/f25d4aea331d46654c9154e7a5bb5fd0c80af2d1.png';
-import screenImage3 from '../../assets/tv/e9d02907258369b4c4147e996f61b53072a22944.png';
-import screenImage4 from '../../assets/tv/2e64e7ad435c17fb93a5577b82ca4dd2ced6f480.png';
-import screenImage5 from '../../assets/tv/12f8e25dc143dbd49360c1bc883822fcf98df942.png';
-import screenImage6 from '../../assets/tv/dbfbe3df4d49aede2b39c29d17529916d9467a13.png';
-import screenImage7 from '../../assets/tv/99d35d77a91d115d9322b4a228edaa93af8a7c0e.png';
-import screenImage8 from '../../assets/tv/677d6a2a67e1bbed76f5cf347abd1438d00f017c.png';
-import screenImage9 from '../../assets/tv/fdab1680e52c85677bfc1114705f90a4ce174043.png';
+// Import all 10 high-resolution Red TV assets rendered directly from Figma prototype
+import tvImage0 from '../../assets/tv/tv-0.png';
+import tvImage1 from '../../assets/tv/tv-1.png';
+import tvImage2 from '../../assets/tv/tv-2.png';
+import tvImage3 from '../../assets/tv/tv-3.png';
+import tvImage4 from '../../assets/tv/tv-4.png';
+import tvImage5 from '../../assets/tv/tv-5.png';
+import tvImage6 from '../../assets/tv/tv-6.png';
+import tvImage7 from '../../assets/tv/tv-7.png';
+import tvImage8 from '../../assets/tv/tv-8.png';
+import tvImage9 from '../../assets/tv/tv-9.png';
 
 export interface HoveringTVItemConfig {
   id: string;
   name: string;
-  screenImage: string;
-  casingImage: string;
+  tvImage: string;
   title?: string;
   alt?: string;
 }
@@ -29,82 +25,72 @@ export const DEFAULT_HOVERING_TV_ITEMS: HoveringTVItemConfig[] = [
   {
     id: 'tv-0',
     name: 'Frame 485',
-    screenImage: screenImage0,
-    casingImage: tvCasingPrimary,
-    title: 'Vintage Sedan Frontal',
-    alt: 'Vintage Sedan Classic Front View',
+    tvImage: tvImage0,
+    title: 'Wooden Car Stacks',
+    alt: 'Solid hardwood carved car blanks stacked in workshop',
   },
   {
     id: 'tv-1',
     name: 'Frame 483',
-    screenImage: screenImage1,
-    casingImage: tvCasingPrimary,
-    title: 'Retro Highway Sunset',
-    alt: 'Retro car highway sunset drive',
+    tvImage: tvImage1,
+    title: 'Wooden Toy Fleet',
+    alt: 'Handcrafted wooden toy cars on dark woodgrain surface',
   },
   {
     id: 'tv-2',
     name: 'Frame 484',
-    screenImage: screenImage2,
-    casingImage: tvCasingSecondary,
-    title: 'Speedway Racer',
-    alt: 'Vintage speedway racer on track',
+    tvImage: tvImage2,
+    title: 'Wooden Car Prototypes',
+    alt: 'Miniature wooden toy car prototype models on white background',
   },
   {
     id: 'tv-3',
     name: 'Frame 520',
-    screenImage: screenImage3,
-    casingImage: tvCasingPrimary,
-    title: 'Classic Road Journey',
-    alt: 'Classic vehicle countryside journey',
+    tvImage: tvImage3,
+    title: 'Modular Assembly Kit',
+    alt: 'Disassembled toy car kit with chassis, roof, wheels, axles, and hex wrench',
   },
   {
     id: 'tv-4',
     name: 'Frame 519',
-    screenImage: screenImage4,
-    casingImage: tvCasingPrimary,
-    title: 'Kaali-Peeli Taxi',
-    alt: 'Iconic Bombay Kaali-Peeli Taxi',
+    tvImage: tvImage4,
+    title: 'Hands at Play',
+    alt: 'Two hands rolling miniature wooden toy cars towards each other',
   },
   {
     id: 'tv-5',
     name: 'Group 5449',
-    screenImage: screenImage5,
-    casingImage: tvCasingPrimary,
-    title: 'Coastal Convertible',
-    alt: 'Vintage convertible along coastal drive',
+    tvImage: tvImage5,
+    title: 'Top-Down Vehicle Lineup',
+    alt: 'Top-down perspective of miniature wooden play cars and branded chassis',
   },
   {
     id: 'tv-6',
     name: 'Frame 522',
-    screenImage: screenImage6,
-    casingImage: tvCasingPrimary,
-    title: 'Chrome Grille Detail',
-    alt: 'Classic chrome grille detail view',
+    tvImage: tvImage6,
+    title: 'Towering Toy Car Pile',
+    alt: 'Sculptural stack of miniature blue and white toy cars',
   },
   {
     id: 'tv-7',
     name: 'Frame 521',
-    screenImage: screenImage7,
-    casingImage: tvCasingPrimary,
-    title: 'Side Profile Cruiser',
-    alt: 'Retro automobile side profile view',
+    tvImage: tvImage7,
+    title: 'Circuit Race Track',
+    alt: 'Curving grey slot car road circuit track with transport truck',
   },
   {
     id: 'tv-8',
     name: 'Frame 523',
-    screenImage: screenImage8,
-    casingImage: tvCasingPrimary,
-    title: 'Retro Dashboard Interior',
-    alt: 'Vintage automotive dashboard and dials',
+    tvImage: tvImage8,
+    title: 'Vintage Bus Circle',
+    alt: 'Classic red and white toy buses arranged facing outward in a circle',
   },
   {
     id: 'tv-9',
     name: 'Frame 524',
-    screenImage: screenImage9,
-    casingImage: tvCasingPrimary,
-    title: 'Mountain Pass Panorama',
-    alt: 'Vintage vehicle mountain pass panorama',
+    tvImage: tvImage9,
+    title: 'Camper Van Fleet',
+    alt: 'Retro green and white miniature camper vans in formation',
   },
 ];
 
@@ -123,11 +109,6 @@ export interface HoveringTVProps {
    * Custom list of TV items or overrides
    */
   items?: Partial<HoveringTVItemConfig>[];
-  /**
-   * Display retro CRT phosphor scanline texture overlay
-   * @default true
-   */
-  showScanlines?: boolean;
   /**
    * Pause floating animation on hover
    * @default true
@@ -149,13 +130,13 @@ export interface HoveringTVProps {
 /**
  * HoveringTV Component
  * Mapped directly from Figma Node `190:68` ("Component 2")
- * Featuring 10 floating vintage CRT TV sets smoothly looping through the 4 Figma keyframe variants.
+ * Featuring 10 floating red vintage CRT TV sets displaying authentic PlayStaples wooden toy cars,
+ * smoothly looping through the 4 Figma keyframe variants.
  */
 export const HoveringTV: React.FC<HoveringTVProps> = ({
   variant = 'animated',
   speed = 8.296,
   items,
-  showScanlines = true,
   pauseOnHover = true,
   interactive = true,
   onTVClick,
@@ -213,21 +194,12 @@ export const HoveringTV: React.FC<HoveringTVProps> = ({
               }
             }}
           >
-            <div className="hovering-tv-screen-wrapper">
-              <img
-                src={item.screenImage}
-                alt={item.alt || item.title || `Retro TV ${idx + 1}`}
-                className="hovering-tv-screen-img"
-                loading="lazy"
-              />
-              {showScanlines && <div className="hovering-tv-scanlines" />}
-              <img
-                src={item.casingImage}
-                alt="Vintage CRT TV Casing"
-                className="hovering-tv-casing-img"
-                loading="lazy"
-              />
-            </div>
+            <img
+              src={item.tvImage}
+              alt={item.alt || item.title || `Red TV ${idx + 1}`}
+              className="hovering-tv-img"
+              loading="lazy"
+            />
           </div>
         ))}
       </div>
@@ -244,24 +216,15 @@ export const HoveringTV: React.FC<HoveringTVProps> = ({
               ✕
             </button>
             <div className="hovering-tv-modal-tv">
-              <div className="hovering-tv-screen-wrapper">
-                <img
-                  src={selectedTV.item.screenImage}
-                  alt={selectedTV.item.alt}
-                  className="hovering-tv-screen-img"
-                />
-                {showScanlines && <div className="hovering-tv-scanlines" />}
-                <img
-                  src={selectedTV.item.casingImage}
-                  alt="Vintage CRT TV Casing"
-                  className="hovering-tv-casing-img"
-                />
-              </div>
+              <img
+                src={selectedTV.item.tvImage}
+                alt={selectedTV.item.alt}
+              />
             </div>
             <div className="hovering-tv-modal-info">
               <h3 className="hovering-tv-modal-title">{selectedTV.item.title}</h3>
               <p className="hovering-tv-modal-desc">
-                {selectedTV.item.name} • CRT Vintage Broadcast Display
+                {selectedTV.item.name} • PlayStaples Vintage Red CRT Display
               </p>
             </div>
           </div>
@@ -273,10 +236,8 @@ export const HoveringTV: React.FC<HoveringTVProps> = ({
 
 // Also export single standalone TV unit
 export interface HoveringTVUnitProps {
-  screenImage?: string;
-  casingImage?: string;
+  tvImage?: string;
   floating?: boolean;
-  showScanlines?: boolean;
   width?: number | string;
   title?: string;
   alt?: string;
@@ -287,16 +248,14 @@ export interface HoveringTVUnitProps {
 
 /**
  * HoveringTVUnit Component
- * A standalone retro vintage CRT television set with gentle floating oscillation.
+ * A standalone retro vintage red television set with gentle floating oscillation.
  */
 export const HoveringTVUnit: React.FC<HoveringTVUnitProps> = ({
-  screenImage = screenImage4,
-  casingImage = tvCasingPrimary,
+  tvImage = tvImage4,
   floating = true,
-  showScanlines = true,
-  width = '320px',
-  title = 'Retro Television',
-  alt = 'Vintage CRT Television Unit',
+  width = '340px',
+  title = 'Retro Red Television',
+  alt = 'PlayStaples Red Vintage CRT Television Unit',
   className = '',
   style = {},
   onClick,
@@ -310,11 +269,7 @@ export const HoveringTVUnit: React.FC<HoveringTVUnitProps> = ({
       tabIndex={onClick ? 0 : undefined}
       title={title}
     >
-      <div className="hovering-tv-screen-wrapper">
-        <img src={screenImage} alt={alt} className="hovering-tv-screen-img" />
-        {showScanlines && <div className="hovering-tv-scanlines" />}
-        <img src={casingImage} alt="Vintage CRT TV Casing" className="hovering-tv-casing-img" />
-      </div>
+      <img src={tvImage} alt={alt} style={{ width: '100%', height: 'auto', display: 'block' }} />
     </div>
   );
 };

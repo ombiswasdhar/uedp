@@ -814,9 +814,9 @@
       "name": "HoveringTV",
       "path": "./src/components/HoveringTV/HoveringTV.stories.tsx",
       "jsDocTags": {},
-      "description": "HoveringTV Component\nMapped directly from Figma Node `190:68` (\"Component 2\")\nFeaturing 10 floating vintage CRT TV sets smoothly looping through the 4 Figma keyframe variants.",
+      "description": "HoveringTV Component\nMapped directly from Figma Node `190:68` (\"Component 2\")\nFeaturing 10 floating red vintage CRT TV sets displaying authentic PlayStaples wooden toy cars,\nsmoothly looping through the 4 Figma keyframe variants.",
       "reactDocgen": {
-        "description": "HoveringTV Component\nMapped directly from Figma Node `190:68` (\"Component 2\")\nFeaturing 10 floating vintage CRT TV sets smoothly looping through the 4 Figma keyframe variants.",
+        "description": "HoveringTV Component\nMapped directly from Figma Node `190:68` (\"Component 2\")\nFeaturing 10 floating red vintage CRT TV sets displaying authentic PlayStaples wooden toy cars,\nsmoothly looping through the 4 Figma keyframe variants.",
         "methods": [],
         "displayName": "HoveringTV",
         "definedInFile": "C:\\Users\\hp\\.gemini\\antigravity-ide\\scratch\\design-system-storybook\\src\\components\\HoveringTV\\HoveringTV.tsx",
@@ -886,17 +886,6 @@
               "raw": "Partial<HoveringTVItemConfig>[]"
             },
             "description": "Custom list of TV items or overrides"
-          },
-          "showScanlines": {
-            "required": false,
-            "tsType": {
-              "name": "boolean"
-            },
-            "description": "Display retro CRT phosphor scanline texture overlay\n@default true",
-            "defaultValue": {
-              "value": "true",
-              "computed": false
-            }
           },
           "pauseOnHover": {
             "required": false,
@@ -3941,6 +3930,6 @@
   },
   "meta": {
     "docgen": "react-docgen",
-    "durationMs": 1200
+    "durationMs": 1231
   }
 }

@@ -20,83 +20,33 @@
 .hovering-tv-item {
   position: absolute;
   transform-origin: center center;
-  transition: filter 0.3s ease, z-index 0.3s step-end;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease, z-index 0.3s step-end;
   cursor: pointer;
-  will-change: transform, left, top, width, height;
+  will-change: left, top, width, height, transform;
 }
 
 .hovering-tv-item:hover {
-  z-index: 40 !important;
-  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5)) brightness(1.08) !important;
+  z-index: 50 !important;
+  transform: scale(1.08) !important;
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.55)) brightness(1.05) !important;
 }
 
-.hovering-tv-screen-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* CRT Screen Image sitting inside bezel */
-.hovering-tv-screen-img {
-  position: absolute;
-  left: 9%;
-  top: 9%;
-  width: 82%;
-  height: 75%;
-  object-fit: cover;
-  border-radius: 8px;
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Vintage CRT TV casing overlay on top */
-.hovering-tv-casing-img {
-  position: absolute;
-  left: 0;
-  top: 0;
+.hovering-tv-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  display: block;
   pointer-events: none;
-  z-index: 2;
 }
 
-/* Optional retro CRT scanline texture */
-.hovering-tv-scanlines {
-  position: absolute;
-  left: 9%;
-  top: 9%;
-  width: 82%;
-  height: 75%;
-  border-radius: 8px;
-  pointer-events: none;
-  z-index: 3;
-  background: linear-gradient(
-    rgba(18, 16, 16, 0) 50%,
-    rgba(0, 0, 0, 0.25) 50%
-  ), linear-gradient(
-    90deg,
-    rgba(255, 0, 0, 0.03),
-    rgba(0, 255, 0, 0.01),
-    rgba(0, 0, 255, 0.03)
-  );
-  background-size: 100% 4px, 6px 100%;
-  opacity: 0.6;
-}
-
-/* Base static positioning and drop-shadows for each TV */
+/* Base static positioning for each TV */
 
 /* --- TV 0: Frame 485 --- */
 .hovering-tv-item-0 {
   left: 13.459%;
   top: 0.000%;
-  width: 18.440%;
-  height: 17.913%;
-  transform: rotate(-18.14deg);
-  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  width: 18.441%;
+  height: 17.914%;
   z-index: 1;
 }
 
@@ -104,33 +54,29 @@
 .hovering-tv-variant-Default .hovering-tv-item-0 {
   left: 13.459%;
   top: 0.000%;
-  width: 18.440%;
-  height: 17.913%;
-  transform: rotate(-18.14deg);
+  width: 18.441%;
+  height: 17.914%;
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-0 {
   left: 11.094%;
   top: -0.982%;
-  width: 20.619%;
-  height: 20.443%;
-  transform: rotate(-18.14deg);
+  width: 20.620%;
+  height: 20.444%;
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-0 {
   left: 8.906%;
   top: -3.186%;
   width: 22.314%;
-  height: 22.472%;
-  transform: rotate(-18.14deg);
+  height: 22.473%;
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-0 {
   left: 11.447%;
   top: -0.558%;
-  width: 20.319%;
-  height: 20.090%;
-  transform: rotate(-18.14deg);
+  width: 20.320%;
+  height: 20.091%;
 }
 
 /* Animated Floating Loop */
@@ -142,30 +88,26 @@
   0%, 100% {
     left: 13.459%;
     top: 0.000%;
-    width: 18.440%;
-    height: 17.913%;
-    transform: rotate(-18.14deg);
+    width: 18.441%;
+    height: 17.914%;
   }
   25% {
     left: 11.094%;
     top: -0.982%;
-    width: 20.619%;
-    height: 20.443%;
-    transform: rotate(-18.14deg);
+    width: 20.620%;
+    height: 20.444%;
   }
   50% {
     left: 8.906%;
     top: -3.186%;
     width: 22.314%;
-    height: 22.472%;
-    transform: rotate(-18.14deg);
+    height: 22.473%;
   }
   75% {
     left: 11.447%;
     top: -0.558%;
-    width: 20.319%;
-    height: 20.090%;
-    transform: rotate(-18.14deg);
+    width: 20.320%;
+    height: 20.091%;
   }
 }
 
@@ -175,8 +117,6 @@
   top: 6.001%;
   width: 19.535%;
   height: 18.792%;
-  transform: rotate(15.7deg);
-  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
   z-index: 2;
 }
 
@@ -186,7 +126,6 @@
   top: 6.001%;
   width: 19.535%;
   height: 18.792%;
-  transform: rotate(15.7deg);
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-1 {
@@ -194,23 +133,20 @@
   top: 3.877%;
   width: 21.877%;
   height: 21.543%;
-  transform: rotate(0deg);
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-1 {
-  left: 63.912%;
+  left: 63.913%;
   top: 4.140%;
-  width: 19.987%;
+  width: 19.988%;
   height: 19.318%;
-  transform: rotate(0deg);
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-1 {
   left: 63.673%;
   top: 1.460%;
-  width: 22.292%;
-  height: 22.039%;
-  transform: rotate(0deg);
+  width: 22.291%;
+  height: 22.040%;
 }
 
 /* Animated Floating Loop */
@@ -224,28 +160,24 @@
     top: 6.001%;
     width: 19.535%;
     height: 18.792%;
-    transform: rotate(15.7deg);
   }
   25% {
     left: 64.050%;
     top: 3.877%;
     width: 21.877%;
     height: 21.543%;
-    transform: rotate(0deg);
   }
   50% {
-    left: 63.912%;
+    left: 63.913%;
     top: 4.140%;
-    width: 19.987%;
+    width: 19.988%;
     height: 19.318%;
-    transform: rotate(0deg);
   }
   75% {
     left: 63.673%;
     top: 1.460%;
-    width: 22.292%;
-    height: 22.039%;
-    transform: rotate(0deg);
+    width: 22.291%;
+    height: 22.040%;
   }
 }
 
@@ -255,8 +187,6 @@
   top: 24.907%;
   width: 14.717%;
   height: 13.683%;
-  transform: rotate(5.44deg);
-  filter: drop-shadow(-30px 30px 12px rgba(0, 0, 0, 0.25));
   z-index: 3;
 }
 
@@ -266,15 +196,13 @@
   top: 24.907%;
   width: 14.717%;
   height: 13.683%;
-  transform: rotate(5.44deg);
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-2 {
   left: 38.994%;
   top: 23.978%;
   width: 18.468%;
-  height: 18.457%;
-  transform: rotate(5.44deg);
+  height: 18.458%;
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-2 {
@@ -282,15 +210,13 @@
   top: 22.013%;
   width: 19.447%;
   height: 20.024%;
-  transform: rotate(5.44deg);
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-2 {
   left: 39.371%;
   top: 22.013%;
-  width: 18.408%;
-  height: 18.370%;
-  transform: rotate(5.44deg);
+  width: 18.406%;
+  height: 18.371%;
 }
 
 /* Animated Floating Loop */
@@ -304,28 +230,24 @@
     top: 24.907%;
     width: 14.717%;
     height: 13.683%;
-    transform: rotate(5.44deg);
   }
   25% {
     left: 38.994%;
     top: 23.978%;
     width: 18.468%;
-    height: 18.457%;
-    transform: rotate(5.44deg);
+    height: 18.458%;
   }
   50% {
     left: 41.459%;
     top: 22.013%;
     width: 19.447%;
     height: 20.024%;
-    transform: rotate(5.44deg);
   }
   75% {
     left: 39.371%;
     top: 22.013%;
-    width: 18.408%;
-    height: 18.370%;
-    transform: rotate(5.44deg);
+    width: 18.406%;
+    height: 18.371%;
   }
 }
 
@@ -334,9 +256,7 @@
   left: 9.434%;
   top: 33.856%;
   width: 22.468%;
-  height: 23.088%;
-  transform: rotate(-23.34deg);
-  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  height: 23.089%;
   z-index: 4;
 }
 
@@ -345,8 +265,7 @@
   left: 9.434%;
   top: 33.856%;
   width: 22.468%;
-  height: 23.088%;
-  transform: rotate(-23.34deg);
+  height: 23.089%;
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-3 {
@@ -354,15 +273,13 @@
   top: 34.068%;
   width: 21.592%;
   height: 22.023%;
-  transform: rotate(-23.34deg);
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-3 {
   left: 9.660%;
   top: 34.838%;
   width: 20.659%;
-  height: 20.919%;
-  transform: rotate(-23.34deg);
+  height: 20.920%;
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-3 {
@@ -370,7 +287,6 @@
   top: 34.121%;
   width: 20.735%;
   height: 21.009%;
-  transform: rotate(-23.34deg);
 }
 
 /* Animated Floating Loop */
@@ -383,74 +299,64 @@
     left: 9.434%;
     top: 33.856%;
     width: 22.468%;
-    height: 23.088%;
-    transform: rotate(-23.34deg);
+    height: 23.089%;
   }
   25% {
     left: 10.264%;
     top: 34.068%;
     width: 21.592%;
     height: 22.023%;
-    transform: rotate(-23.34deg);
   }
   50% {
     left: 9.660%;
     top: 34.838%;
     width: 20.659%;
-    height: 20.919%;
-    transform: rotate(-23.34deg);
+    height: 20.920%;
   }
   75% {
     left: 9.509%;
     top: 34.121%;
     width: 20.735%;
     height: 21.009%;
-    transform: rotate(-23.34deg);
   }
 }
 
 /* --- TV 4: Frame 519 --- */
 .hovering-tv-item-4 {
-  left: 33.718%;
+  left: 33.719%;
   top: 38.938%;
   width: 16.166%;
-  height: 16.184%;
-  transform: rotate(-21.89deg);
-  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  height: 16.183%;
   z-index: 5;
 }
 
 /* Static Variant Classes */
 .hovering-tv-variant-Default .hovering-tv-item-4 {
-  left: 33.718%;
+  left: 33.719%;
   top: 38.938%;
   width: 16.166%;
-  height: 16.184%;
-  transform: rotate(-21.89deg);
+  height: 16.183%;
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-4 {
   left: 33.484%;
   top: 38.901%;
-  width: 17.099%;
+  width: 17.101%;
   height: 17.302%;
-  transform: rotate(-21.89deg);
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-4 {
   left: 32.704%;
   top: 37.812%;
   width: 17.962%;
-  height: 18.370%;
-  transform: rotate(-21.89deg);
+  height: 18.371%;
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-4 {
   left: 31.774%;
   top: 37.175%;
-  width: 19.024%;
-  height: 19.862%;
-  transform: rotate(-21.89deg);
+  width: 19.023%;
+  height: 19.863%;
 }
 
 /* Animated Floating Loop */
@@ -460,32 +366,28 @@
 
 @keyframes tv-float-4 {
   0%, 100% {
-    left: 33.718%;
+    left: 33.719%;
     top: 38.938%;
     width: 16.166%;
-    height: 16.184%;
-    transform: rotate(-21.89deg);
+    height: 16.183%;
   }
   25% {
     left: 33.484%;
     top: 38.901%;
-    width: 17.099%;
+    width: 17.101%;
     height: 17.302%;
-    transform: rotate(-21.89deg);
   }
   50% {
     left: 32.704%;
     top: 37.812%;
     width: 17.962%;
-    height: 18.370%;
-    transform: rotate(-21.89deg);
+    height: 18.371%;
   }
   75% {
     left: 31.774%;
     top: 37.175%;
-    width: 19.024%;
-    height: 19.862%;
-    transform: rotate(-21.89deg);
+    width: 19.023%;
+    height: 19.863%;
   }
 }
 
@@ -493,10 +395,8 @@
 .hovering-tv-item-5 {
   left: 74.541%;
   top: 41.715%;
-  width: 12.020%;
+  width: 12.019%;
   height: 12.079%;
-  transform: rotate(28.01deg);
-  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
   z-index: 6;
 }
 
@@ -504,33 +404,29 @@
 .hovering-tv-variant-Default .hovering-tv-item-5 {
   left: 74.541%;
   top: 41.715%;
-  width: 12.020%;
+  width: 12.019%;
   height: 12.079%;
-  transform: rotate(28.01deg);
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-5 {
   left: 74.297%;
-  top: 40.967%;
-  width: 13.545%;
-  height: 13.784%;
-  transform: rotate(28.01deg);
+  top: 40.966%;
+  width: 13.544%;
+  height: 13.783%;
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-5 {
-  left: 74.455%;
-  top: 40.693%;
+  left: 74.456%;
+  top: 40.692%;
   width: 12.433%;
-  height: 12.539%;
-  transform: rotate(28.01deg);
+  height: 12.538%;
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-5 {
   left: 72.234%;
-  top: 40.547%;
+  top: 40.546%;
   width: 13.718%;
-  height: 13.978%;
-  transform: rotate(28.01deg);
+  height: 13.979%;
 }
 
 /* Animated Floating Loop */
@@ -542,30 +438,26 @@
   0%, 100% {
     left: 74.541%;
     top: 41.715%;
-    width: 12.020%;
+    width: 12.019%;
     height: 12.079%;
-    transform: rotate(28.01deg);
   }
   25% {
     left: 74.297%;
-    top: 40.967%;
-    width: 13.545%;
-    height: 13.784%;
-    transform: rotate(28.01deg);
+    top: 40.966%;
+    width: 13.544%;
+    height: 13.783%;
   }
   50% {
-    left: 74.455%;
-    top: 40.693%;
+    left: 74.456%;
+    top: 40.692%;
     width: 12.433%;
-    height: 12.539%;
-    transform: rotate(28.01deg);
+    height: 12.538%;
   }
   75% {
     left: 72.234%;
-    top: 40.547%;
+    top: 40.546%;
     width: 13.718%;
-    height: 13.978%;
-    transform: rotate(28.01deg);
+    height: 13.979%;
   }
 }
 
@@ -573,10 +465,8 @@
 .hovering-tv-item-6 {
   left: 67.774%;
   top: 53.808%;
-  width: 17.213%;
+  width: 17.212%;
   height: 16.328%;
-  transform: rotate(13.07deg);
-  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
   z-index: 7;
 }
 
@@ -584,33 +474,29 @@
 .hovering-tv-variant-Default .hovering-tv-item-6 {
   left: 67.774%;
   top: 53.808%;
-  width: 17.213%;
+  width: 17.212%;
   height: 16.328%;
-  transform: rotate(13.07deg);
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-6 {
   left: 68.176%;
   top: 52.496%;
-  width: 19.540%;
+  width: 19.539%;
   height: 19.116%;
-  transform: rotate(13.07deg);
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-6 {
   left: 67.170%;
   top: 51.221%;
-  width: 20.531%;
+  width: 20.532%;
   height: 20.351%;
-  transform: rotate(13.07deg);
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-6 {
   left: 66.239%;
   top: 50.876%;
-  width: 21.575%;
-  height: 21.702%;
-  transform: rotate(13.07deg);
+  width: 21.574%;
+  height: 21.703%;
 }
 
 /* Animated Floating Loop */
@@ -622,30 +508,26 @@
   0%, 100% {
     left: 67.774%;
     top: 53.808%;
-    width: 17.213%;
+    width: 17.212%;
     height: 16.328%;
-    transform: rotate(13.07deg);
   }
   25% {
     left: 68.176%;
     top: 52.496%;
-    width: 19.540%;
+    width: 19.539%;
     height: 19.116%;
-    transform: rotate(13.07deg);
   }
   50% {
     left: 67.170%;
     top: 51.221%;
-    width: 20.531%;
+    width: 20.532%;
     height: 20.351%;
-    transform: rotate(13.07deg);
   }
   75% {
     left: 66.239%;
     top: 50.876%;
-    width: 21.575%;
-    height: 21.702%;
-    transform: rotate(13.07deg);
+    width: 21.574%;
+    height: 21.703%;
   }
 }
 
@@ -655,8 +537,6 @@
   top: 74.190%;
   width: 16.712%;
   height: 15.730%;
-  transform: rotate(-6.59deg);
-  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
   z-index: 8;
 }
 
@@ -666,31 +546,27 @@
   top: 74.190%;
   width: 16.712%;
   height: 15.730%;
-  transform: rotate(-6.59deg);
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-7 {
   left: 12.906%;
   top: 73.155%;
-  width: 17.419%;
+  width: 17.418%;
   height: 16.628%;
-  transform: rotate(-6.59deg);
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-7 {
   left: 11.824%;
   top: 72.411%;
-  width: 18.307%;
+  width: 18.308%;
   height: 17.796%;
-  transform: rotate(-6.59deg);
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-7 {
-  left: 12.111%;
-  top: 72.735%;
-  width: 19.009%;
+  left: 12.110%;
+  top: 72.734%;
+  width: 19.010%;
   height: 18.765%;
-  transform: rotate(-6.59deg);
 }
 
 /* Animated Floating Loop */
@@ -704,28 +580,24 @@
     top: 74.190%;
     width: 16.712%;
     height: 15.730%;
-    transform: rotate(-6.59deg);
   }
   25% {
     left: 12.906%;
     top: 73.155%;
-    width: 17.419%;
+    width: 17.418%;
     height: 16.628%;
-    transform: rotate(-6.59deg);
   }
   50% {
     left: 11.824%;
     top: 72.411%;
-    width: 18.307%;
+    width: 18.308%;
     height: 17.796%;
-    transform: rotate(-6.59deg);
   }
   75% {
-    left: 12.111%;
-    top: 72.735%;
-    width: 19.009%;
+    left: 12.110%;
+    top: 72.734%;
+    width: 19.010%;
     height: 18.765%;
-    transform: rotate(-6.59deg);
   }
 }
 
@@ -733,10 +605,8 @@
 .hovering-tv-item-8 {
   left: 32.428%;
   top: 78.943%;
-  width: 18.918%;
-  height: 19.264%;
-  transform: rotate(-24.25deg);
-  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  width: 18.919%;
+  height: 19.265%;
   z-index: 9;
 }
 
@@ -744,33 +614,29 @@
 .hovering-tv-variant-Default .hovering-tv-item-8 {
   left: 32.428%;
   top: 78.943%;
-  width: 18.918%;
-  height: 19.264%;
-  transform: rotate(-24.25deg);
+  width: 18.919%;
+  height: 19.265%;
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-8 {
-  left: 31.711%;
-  top: 77.860%;
-  width: 20.941%;
-  height: 21.760%;
-  transform: rotate(-24.25deg);
+  left: 31.709%;
+  top: 77.859%;
+  width: 20.940%;
+  height: 21.761%;
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-8 {
   left: 30.767%;
   top: 76.660%;
   width: 21.384%;
-  height: 22.448%;
-  transform: rotate(-24.25deg);
+  height: 22.447%;
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-8 {
-  left: 31.467%;
+  left: 31.466%;
   top: 75.998%;
   width: 21.396%;
   height: 22.602%;
-  transform: rotate(-24.25deg);
 }
 
 /* Animated Floating Loop */
@@ -782,30 +648,26 @@
   0%, 100% {
     left: 32.428%;
     top: 78.943%;
-    width: 18.918%;
-    height: 19.264%;
-    transform: rotate(-24.25deg);
+    width: 18.919%;
+    height: 19.265%;
   }
   25% {
-    left: 31.711%;
-    top: 77.860%;
-    width: 20.941%;
-    height: 21.760%;
-    transform: rotate(-24.25deg);
+    left: 31.709%;
+    top: 77.859%;
+    width: 20.940%;
+    height: 21.761%;
   }
   50% {
     left: 30.767%;
     top: 76.660%;
     width: 21.384%;
-    height: 22.448%;
-    transform: rotate(-24.25deg);
+    height: 22.447%;
   }
   75% {
-    left: 31.467%;
+    left: 31.466%;
     top: 75.998%;
     width: 21.396%;
     height: 22.602%;
-    transform: rotate(-24.25deg);
   }
 }
 
@@ -814,9 +676,7 @@
   left: 77.560%;
   top: 81.545%;
   width: 10.735%;
-  height: 10.319%;
-  transform: rotate(16.1deg);
-  filter: drop-shadow(-25px 20px 15px rgba(0, 0, 0, 0.22));
+  height: 10.318%;
   z-index: 10;
 }
 
@@ -825,16 +685,14 @@
   left: 77.560%;
   top: 81.545%;
   width: 10.735%;
-  height: 10.319%;
-  transform: rotate(16.1deg);
+  height: 10.318%;
 }
 
 .hovering-tv-variant-Variant2 .hovering-tv-item-9 {
   left: 74.199%;
   top: 80.672%;
   width: 11.970%;
-  height: 11.768%;
-  transform: rotate(16.1deg);
+  height: 11.769%;
 }
 
 .hovering-tv-variant-Variant3 .hovering-tv-item-9 {
@@ -842,15 +700,13 @@
   top: 79.740%;
   width: 12.989%;
   height: 13.011%;
-  transform: rotate(16.1deg);
 }
 
 .hovering-tv-variant-Variant4 .hovering-tv-item-9 {
   left: 73.912%;
   top: 79.395%;
-  width: 13.907%;
-  height: 14.206%;
-  transform: rotate(16.1deg);
+  width: 13.908%;
+  height: 14.205%;
 }
 
 /* Animated Floating Loop */
@@ -863,29 +719,25 @@
     left: 77.560%;
     top: 81.545%;
     width: 10.735%;
-    height: 10.319%;
-    transform: rotate(16.1deg);
+    height: 10.318%;
   }
   25% {
     left: 74.199%;
     top: 80.672%;
     width: 11.970%;
-    height: 11.768%;
-    transform: rotate(16.1deg);
+    height: 11.769%;
   }
   50% {
     left: 72.981%;
     top: 79.740%;
     width: 12.989%;
     height: 13.011%;
-    transform: rotate(16.1deg);
   }
   75% {
     left: 73.912%;
     top: 79.395%;
-    width: 13.907%;
-    height: 14.206%;
-    transform: rotate(16.1deg);
+    width: 13.908%;
+    height: 14.205%;
   }
 }
 
@@ -897,8 +749,6 @@
 /* Standalone Single Hovering TV Unit */
 .hovering-tv-unit {
   position: relative;
-  aspect-ratio: 1 / 1;
-  max-width: 480px;
   display: inline-block;
   user-select: none;
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.28));
@@ -906,7 +756,7 @@
 }
 
 .hovering-tv-unit:hover {
-  transform: translateY(-8px) scale(1.04);
+  transform: translateY(-8px) scale(1.05);
   filter: drop-shadow(0 30px 45px rgba(0, 0, 0, 0.38));
 }
 
@@ -919,10 +769,10 @@
     transform: translateY(0) rotate(-1.5deg);
   }
   50% {
-    transform: translateY(-16px) rotate(1deg);
+    transform: translateY(-14px) rotate(1deg);
   }
   100% {
-    transform: translateY(-8px) rotate(-0.5deg);
+    transform: translateY(-6px) rotate(-0.5deg);
   }
 }
 
@@ -950,9 +800,9 @@
   position: relative;
   background: #18181B;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
-  padding: 32px 32px 24px;
-  max-width: 580px;
+  border-radius: 24px;
+  padding: 36px 36px 28px;
+  max-width: 620px;
   width: 100%;
   box-shadow: 0 40px 80px rgba(0, 0, 0, 0.7);
   display: flex;
@@ -974,8 +824,8 @@
 
 .hovering-tv-modal-close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 18px;
+  right: 18px;
   background: rgba(255, 255, 255, 0.08);
   border: none;
   border-radius: 50%;
@@ -997,19 +847,27 @@
 
 .hovering-tv-modal-tv {
   width: 100%;
-  max-width: 440px;
-  aspect-ratio: 1 / 1;
-  filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.6));
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hovering-tv-modal-tv img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.5));
 }
 
 .hovering-tv-modal-info {
-  margin-top: 20px;
+  margin-top: 24px;
   text-align: center;
 }
 
 .hovering-tv-modal-title {
   font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   color: #FFFFFF;
   letter-spacing: 0.02em;
@@ -1025,4 +883,3 @@
   letter-spacing: 0.08em;
   margin: 0;
 }
-
