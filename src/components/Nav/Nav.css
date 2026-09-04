@@ -12,6 +12,7 @@
   /* The logo was x:24, container was right-aligned with 21px margin in 1920px width */
   padding: 0 21px 0 24px;
   box-sizing: border-box;
+  border-bottom: 1px solid #EAEAEA;
 }
 
 .nav-logo {

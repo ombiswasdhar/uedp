@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap');
+
+.product-details-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-main-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px; /* Base padding for large screens */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section Header */
+.product-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px 0 24px 0;
+  border-bottom: 1px solid #EAEAEA;
+  margin-bottom: 40px;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 18.7px;
+  color: #8F8F8F;
+  text-transform: uppercase;
+}
+
+.title-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  color: #292929;
+  margin: 0;
+  line-height: 1;
+}
+
+.header-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.price-text {
+  font-family: 'Rajdhani', sans-serif; /* Fallback for Noka Medium */
+  font-weight: 600;
+  font-size: 42px;
+  color: #141414;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Product Section Layout */
+.product-section {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+/* Left Column */
+.product-left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.main-image-container {
+  width: 100%;
+  min-height: 520px;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply; /* Helps blend with the F5F5F5 background if image isn't perfectly transparent */
+}
+
+.thumbnail-carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.thumbnails-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex: 1;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.thumbnail-square {
+  width: 117px;
+  height: 117px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.thumbnail-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail-square.active {
+  border-color: #FF5159; /* Active highlight */
+}
+
+.carousel-nav-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #8F8F8F;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 8px;
+}
+
+.carousel-nav-btn:hover {
+  color: #292929;
+}
+
+/* Right Column */
+.product-right-column {
+  flex: 0 0 45%; /* Fix width to about 45% of the container */
+  max-width: 769px; /* Max width from Figma */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Title Block */
+.product-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-main-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 52.45px;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.title-black {
+  color: #18181B;
+}
+
+.title-yellow {
+  color: #FEDE17;
+}
+
+.product-subtitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 21.42px;
+  color: #8F8F8F;
+  margin: 0;
+}
+
+/* CTA Button */
+.add-to-cart-btn {
+  width: 100%;
+  height: 63px;
+  background-color: #FF5159;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e63e46;
+}
+
+.btn-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* Specs List */
+.specs-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-item {
+  position: relative;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.spec-item:first-child {
+  padding-top: 0;
+}
+
+.spec-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 25.5px;
+  color: #292929;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.spec-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #666666;
+  margin: 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.spec-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #EAEAEA;
+}
+
+/* Delivery Spec Item Override */
+.delivery-item {
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.delivery-icon-box {
+  width: 63px;
+  height: 63px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #292929;
+}
+
+.delivery-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7A7A7A;
+  text-decoration: underline;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.delivery-text:hover {
+  color: #292929;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .product-section {
+    flex-direction: column;
+  }
+  
+  .product-right-column {
+    flex: 1;
+    max-width: 100%;
+  }
+}

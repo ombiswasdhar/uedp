@@ -923,6 +923,28 @@
       ],
       "import": "import { Nav } from \"design-system-storybook\";"
     },
+    "figma-components-product-details-page": {
+      "id": "figma-components-product-details-page",
+      "name": "ProductDetails",
+      "path": "./src/components/ProductDetails/ProductDetails.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "ProductDetails",
+        "definedInFile": "C:\\Users\\hp\\.gemini\\antigravity-ide\\scratch\\design-system-storybook\\src\\components\\ProductDetails\\ProductDetails.tsx",
+        "actualName": "ProductDetails",
+        "exportName": "ProductDetails"
+      },
+      "stories": [
+        {
+          "id": "figma-components-product-details-page--default",
+          "name": "Default",
+          "snippet": "const Default = () => <ProductDetails />;"
+        }
+      ],
+      "import": "import { ProductDetails } from \"design-system-storybook\";"
+    },
     "figma-components-property1active": {
       "id": "figma-components-property1active",
       "name": "Property1Active",
@@ -2889,12 +2911,56 @@
         "actualName": "Switch",
         "exportName": "Switch",
         "props": {
-          "testId": {
+          "defaultSelected": {
             "required": false,
             "tsType": {
-              "name": "string"
+              "name": "boolean"
             },
-            "description": "Figma Node ID: 37:671"
+            "description": "Initial state of the switch. If provided, acts as uncontrolled component initial state.",
+            "defaultValue": {
+              "value": "false",
+              "computed": false
+            }
+          },
+          "selected": {
+            "required": false,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": "Controlled state of the switch."
+          },
+          "disabled": {
+            "required": false,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": "If true, the switch is disabled.",
+            "defaultValue": {
+              "value": "false",
+              "computed": false
+            }
+          },
+          "onChange": {
+            "required": false,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "(selected: boolean) => void",
+              "signature": {
+                "arguments": [
+                  {
+                    "type": {
+                      "name": "boolean"
+                    },
+                    "name": "selected"
+                  }
+                ],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": "Callback fired when the state changes."
           }
         }
       },
@@ -2902,7 +2968,22 @@
         {
           "id": "figma-components-switch--default",
           "name": "Default",
-          "snippet": "const Default = () => <Switch testId=\"Switch-default\" />;"
+          "snippet": "const Default = () => <Switch defaultSelected={false} disabled={false} />;"
+        },
+        {
+          "id": "figma-components-switch--selected",
+          "name": "Selected",
+          "snippet": "const Selected = () => <Switch defaultSelected disabled={false} />;"
+        },
+        {
+          "id": "figma-components-switch--disabled-unselected",
+          "name": "Disabled Unselected",
+          "snippet": "const DisabledUnselected = () => <Switch defaultSelected={false} disabled />;"
+        },
+        {
+          "id": "figma-components-switch--disabled-selected",
+          "name": "Disabled Selected",
+          "snippet": "const DisabledSelected = () => <Switch defaultSelected disabled />;"
         }
       ],
       "import": "import { Switch } from \"design-system-storybook\";"
@@ -3357,6 +3438,6 @@
   },
   "meta": {
     "docgen": "react-docgen",
-    "durationMs": 1515
+    "durationMs": 2772
   }
 }
