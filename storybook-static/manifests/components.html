@@ -588,13 +588,13 @@
 <header>
   <div class="wrap">
     <h1>Manifest Debugger</h1>
-    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><a class="filter-pill err" data-k="errors" href="#filter-errors">2/97 prop type errors</a><a class="filter-pill info" data-k="infos" href="#filter-infos">96/97 infos</a><span class="filter-pill ok" aria-disabled="true">111 stories ok</span><a class="filter-pill ok" data-k="docs" href="#filter-docs">1 doc ok</a></div>
+    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><a class="filter-pill err" data-k="errors" href="#filter-errors">2/97 prop type errors</a><a class="filter-pill info" data-k="infos" href="#filter-infos">96/97 infos</a><span class="filter-pill ok" aria-disabled="true">115 stories ok</span><a class="filter-pill ok" data-k="docs" href="#filter-docs">1 doc ok</a></div>
   </div>
 </header>
 <main>
   <div class="wrap">
     <div class="note info" style="margin-bottom: 16px;">
-            <strong>Tip:</strong> You are using <code>react-docgen</code> (the default). Generation took <strong>2.8s</strong>. For higher quality prop types, consider switching to <code>react-docgen-typescript</code> in your <code>main.ts</code>:
+            <strong>Tip:</strong> You are using <code>react-docgen</code> (the default). Generation took <strong>1.2s</strong>. For higher quality prop types, consider switching to <code>react-docgen-typescript</code> in your <code>main.ts</code>:
             <pre><code>typescript: {
   reactDocgen: 'react-docgen-typescript',
 }</code></pre>
@@ -2975,14 +2975,14 @@ testId?: string = &#39;nav-component&#39;</code></pre>
     <div class="title">
       <h2><span class="status-dot dot-ok"></span> productcard</h2>
       <div class="badges">
-        <label for="c-26-figma-components-productcard-props" class="badge ok as-toggle">1 prop type</label>
-        <label for="c-26-figma-components-productcard-info" class="badge info as-toggle">1 info</label>
-        <label for="c-26-figma-components-productcard-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-26-figma-components-product-card-props" class="badge ok as-toggle">10 prop types</label>
+        <label for="c-26-figma-components-product-card-info" class="badge info as-toggle">1 info</label>
+        <label for="c-26-figma-components-product-card-stories" class="badge ok as-toggle">5 stories</label>
         
         
       </div>
     </div>
-    <div class="meta" title="./src/components/productcard/productcard.stories.tsx">figma-components-productcard · ./src/components/productcard/productcard.stories.tsx</div>
+    <div class="meta" title="./src/components/productcard/productcard.stories.tsx">figma-components-product-card · ./src/components/productcard/productcard.stories.tsx</div>
     
     
     
@@ -2990,11 +2990,11 @@ testId?: string = &#39;nav-component&#39;</code></pre>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
   
-  <input id="c-26-figma-components-productcard-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-26-figma-components-productcard-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-26-figma-components-product-card-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-26-figma-components-product-card-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
-  <input id="c-26-figma-components-productcard-props" class="tg tg-props" type="checkbox" hidden />
+  <input id="c-26-figma-components-product-card-props" class="tg tg-props" type="checkbox" hidden />
 
   <div class="panels">
     
@@ -3011,14 +3011,37 @@ testId?: string = &#39;nav-component&#39;</code></pre>
           <div class="note ok">
             <div class="row">
               <span class="ex-name">Prop types <small>(react-docgen)</small></span>
-              <span class="badge ok">1 prop type</span>
+              <span class="badge ok">10 prop types</span>
             </div>
             <pre><code>Component: src\components\productcard\productcard.tsx::productcard</code></pre>
             <pre><code>Props:</code></pre>
-            <pre><code>/**
+            <pre><code>badge?: string
+
+className?: string = &#39;&#39;
+
+code?: string
+
+imageUrl?: string = &#39;/car.png&#39;
+
+onClick?: () =&gt; void
+
+price?: string
+
+series?: string
+
+/**
  * Figma Node ID: 44:624
  */
-testId?: string</code></pre>
+testId?: string = &#39;productcard-44-624&#39;
+
+title?: string
+
+variant?: | &#39;bombay dreams&#39; 
+| &#39;konkan ghats&#39; 
+| &#39;Variant3&#39; 
+| &#39;Kaali - Peeli&#39; 
+| &#39;Variant4&#39; 
+| &#39;Retro rohtak&#39; = &#39;bombay dreams&#39;</code></pre>
           </div>
         </div>
     
@@ -3036,12 +3059,55 @@ testId?: string</code></pre>
           
             <div class="note ok">
               <div class="row">
-                <span class="ex-name">Default</span>
+                <span class="ex-name">Bombay Dreams</span>
                 <span class="badge ok">story ok</span>
               </div>
               
               
-              <pre><code>const Default = () =&gt; &lt;productcard testId=&quot;productcard-default&quot; /&gt;;</code></pre>
+              <pre><code>const BombayDreams = () =&gt; &lt;productcard variant=&quot;bombay dreams&quot; imageUrl=&quot;/car.png&quot; /&gt;;</code></pre>
+            </div>
+            <div class="note ok">
+              <div class="row">
+                <span class="ex-name">Konkan Ghats</span>
+                <span class="badge ok">story ok</span>
+              </div>
+              
+              
+              <pre><code>const KonkanGhats = () =&gt; &lt;productcard variant=&quot;konkan ghats&quot; imageUrl=&quot;/car.png&quot; /&gt;;</code></pre>
+            </div>
+            <div class="note ok">
+              <div class="row">
+                <span class="ex-name">Kaali Peeli</span>
+                <span class="badge ok">story ok</span>
+              </div>
+              
+              
+              <pre><code>const KaaliPeeli = () =&gt; &lt;productcard variant=&quot;Kaali - Peeli&quot; imageUrl=&quot;/car.png&quot; /&gt;;</code></pre>
+            </div>
+            <div class="note ok">
+              <div class="row">
+                <span class="ex-name">Retro Rohtak</span>
+                <span class="badge ok">story ok</span>
+              </div>
+              
+              
+              <pre><code>const RetroRohtak = () =&gt; &lt;productcard variant=&quot;Retro rohtak&quot; imageUrl=&quot;/car.png&quot; /&gt;;</code></pre>
+            </div>
+            <div class="note ok">
+              <div class="row">
+                <span class="ex-name">All Variants Grid</span>
+                <span class="badge ok">story ok</span>
+              </div>
+              
+              
+              <pre><code>const AllVariantsGrid = () =&gt; (
+  &lt;div style={{ display: &#39;grid&#39;, gridTemplateColumns: &#39;repeat(auto-fit, minmax(360px, 456px))&#39;, gap: &#39;32px&#39;, padding: &#39;32px&#39;, maxWidth: &#39;1400px&#39;, margin: &#39;0 auto&#39;, background: &#39;#F8F9FA&#39; }}&gt;
+    &lt;productcard variant=&quot;bombay dreams&quot; imageUrl=&quot;/car.png&quot; /&gt;
+    &lt;productcard variant=&quot;konkan ghats&quot; imageUrl=&quot;/car.png&quot; /&gt;
+    &lt;productcard variant=&quot;Kaali - Peeli&quot; imageUrl=&quot;/car.png&quot; /&gt;
+    &lt;productcard variant=&quot;Retro rohtak&quot; imageUrl=&quot;/car.png&quot; /&gt;
+  &lt;/div&gt;
+);</code></pre>
             </div>
         </div>
     

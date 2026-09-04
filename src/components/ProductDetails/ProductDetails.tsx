@@ -27,9 +27,9 @@ export const ProductDetails: React.FC = () => {
           {/* Left Column - Images */}
           <div className="product-left-column">
             <div className="main-image-container">
-              {/* Main Product Image Placeholder */}
+              {/* Main Product Image */}
               <img 
-                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=1200&h=800" 
+                src="/car.png" 
                 alt="Kaali-Peeli Bombay Taxi Toy Car" 
                 className="main-image"
               />
@@ -40,7 +40,7 @@ export const ProductDetails: React.FC = () => {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <div key={i} className={`thumbnail-square ${i === 1 ? 'active' : ''}`}>
                     <img 
-                      src={`https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=200&h=200&sig=${i}`} 
+                      src="/car.png" 
                       alt={`Thumbnail ${i}`} 
                     />
                   </div>

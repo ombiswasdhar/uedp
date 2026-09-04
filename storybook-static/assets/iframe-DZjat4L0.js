@@ -1,0 +1,1 @@
+import{t as e}from"./iframe-CfBB__5q.js";e();

@@ -2988,8 +2988,8 @@
       ],
       "import": "import { Switch } from \"design-system-storybook\";"
     },
-    "figma-components-productcard": {
-      "id": "figma-components-productcard",
+    "figma-components-product-card": {
+      "id": "figma-components-product-card",
       "name": "productcard",
       "path": "./src/components/productcard/productcard.stories.tsx",
       "jsDocTags": {},
@@ -3006,15 +3006,149 @@
             "tsType": {
               "name": "string"
             },
-            "description": "Figma Node ID: 44:624"
+            "description": "Figma Node ID: 44:624",
+            "defaultValue": {
+              "value": "'productcard-44-624'",
+              "computed": false
+            }
+          },
+          "variant": {
+            "required": false,
+            "tsType": {
+              "name": "union",
+              "raw": "| 'bombay dreams' \n| 'konkan ghats' \n| 'Variant3' \n| 'Kaali - Peeli' \n| 'Variant4' \n| 'Retro rohtak'",
+              "elements": [
+                {
+                  "name": "literal",
+                  "value": "'bombay dreams'"
+                },
+                {
+                  "name": "literal",
+                  "value": "'konkan ghats'"
+                },
+                {
+                  "name": "literal",
+                  "value": "'Variant3'"
+                },
+                {
+                  "name": "literal",
+                  "value": "'Kaali - Peeli'"
+                },
+                {
+                  "name": "literal",
+                  "value": "'Variant4'"
+                },
+                {
+                  "name": "literal",
+                  "value": "'Retro rohtak'"
+                }
+              ]
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "'bombay dreams'",
+              "computed": false
+            }
+          },
+          "title": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "price": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "series": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "badge": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "code": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "imageUrl": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "'/car.png'",
+              "computed": false
+            }
+          },
+          "onClick": {
+            "required": false,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "className": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "''",
+              "computed": false
+            }
           }
         }
       },
       "stories": [
         {
-          "id": "figma-components-productcard--default",
-          "name": "Default",
-          "snippet": "const Default = () => <productcard testId=\"productcard-default\" />;"
+          "id": "figma-components-product-card--bombay-dreams",
+          "name": "Bombay Dreams",
+          "snippet": "const BombayDreams = () => <productcard variant=\"bombay dreams\" imageUrl=\"/car.png\" />;"
+        },
+        {
+          "id": "figma-components-product-card--konkan-ghats",
+          "name": "Konkan Ghats",
+          "snippet": "const KonkanGhats = () => <productcard variant=\"konkan ghats\" imageUrl=\"/car.png\" />;"
+        },
+        {
+          "id": "figma-components-product-card--kaali-peeli",
+          "name": "Kaali Peeli",
+          "snippet": "const KaaliPeeli = () => <productcard variant=\"Kaali - Peeli\" imageUrl=\"/car.png\" />;"
+        },
+        {
+          "id": "figma-components-product-card--retro-rohtak",
+          "name": "Retro Rohtak",
+          "snippet": "const RetroRohtak = () => <productcard variant=\"Retro rohtak\" imageUrl=\"/car.png\" />;"
+        },
+        {
+          "id": "figma-components-product-card--all-variants-grid",
+          "name": "All Variants Grid",
+          "snippet": "const AllVariantsGrid = () => (\r\n  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 456px))', gap: '32px', padding: '32px', maxWidth: '1400px', margin: '0 auto', background: '#F8F9FA' }}>\r\n    <productcard variant=\"bombay dreams\" imageUrl=\"/car.png\" />\r\n    <productcard variant=\"konkan ghats\" imageUrl=\"/car.png\" />\r\n    <productcard variant=\"Kaali - Peeli\" imageUrl=\"/car.png\" />\r\n    <productcard variant=\"Retro rohtak\" imageUrl=\"/car.png\" />\r\n  </div>\r\n);"
         }
       ],
       "import": "import { productcard } from \"design-system-storybook\";"
@@ -3438,6 +3572,6 @@
   },
   "meta": {
     "docgen": "react-docgen",
-    "durationMs": 2772
+    "durationMs": 1238
   }
 }
